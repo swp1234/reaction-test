@@ -9,15 +9,19 @@ class I18n {
 
     async init() {
         // localStorage에서 언어 설정 가져오기
-        const savedLang = localStorage.getItem('selectedLanguage');
-        if (savedLang && this.supportedLanguages.includes(savedLang)) {
-            this.currentLang = savedLang;
-        } else {
-            // 브라우저 언어 감지
-            const browserLang = this.detectBrowserLanguage();
-            if (browserLang) {
-                this.currentLang = browserLang;
+        try {
+            const savedLang = localStorage.getItem('selectedLanguage');
+            if (savedLang && this.supportedLanguages.includes(savedLang)) {
+                this.currentLang = savedLang;
+            } else {
+                // 브라우저 언어 감지
+                const browserLang = this.detectBrowserLanguage();
+                if (browserLang) {
+                    this.currentLang = browserLang;
+                }
             }
+        } catch (e) {
+            console.warn('localStorage not available (private/incognito mode)', e);
         }
 
         await this.loadTranslations(this.currentLang);
@@ -81,7 +85,11 @@ class I18n {
         }
 
         this.currentLang = lang;
-        localStorage.setItem('selectedLanguage', lang);
+        try {
+            localStorage.setItem('selectedLanguage', lang);
+        } catch (e) {
+            console.warn('Could not save language preference', e);
+        }
         await this.loadTranslations(lang);
         this.updateUI();
 
