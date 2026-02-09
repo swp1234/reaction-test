@@ -55,42 +55,57 @@ class ReactionTest {
     }
 
     initEventListeners() {
-        this.startBtn.addEventListener('click', () => this.startTest());
-        this.retryBtn.addEventListener('click', () => this.startTest());
-        this.shareBtn.addEventListener('click', () => this.shareResult());
-        this.premiumBtn.addEventListener('click', () => this.showPremiumAnalysis());
+        // Safe event listener attachment with null checks
+        if (this.startBtn) this.startBtn.addEventListener('click', () => this.startTest());
+        if (this.retryBtn) this.retryBtn.addEventListener('click', () => this.startTest());
+        if (this.shareBtn) this.shareBtn.addEventListener('click', () => this.shareResult());
+        if (this.premiumBtn) this.premiumBtn.addEventListener('click', () => this.showPremiumAnalysis());
 
-        this.gameArea.addEventListener('click', () => this.onGameAreaTap());
-        this.gameArea.addEventListener('keydown', (e) => {
-            if (e.key === ' ' || e.key === 'Enter') {
-                e.preventDefault();
-                this.onGameAreaTap();
-            }
-        });
+        if (this.gameArea) {
+            this.gameArea.addEventListener('click', () => this.onGameAreaTap());
+            this.gameArea.addEventListener('keydown', (e) => {
+                if (e.key === ' ' || e.key === 'Enter') {
+                    e.preventDefault();
+                    this.onGameAreaTap();
+                }
+            });
+        }
 
         // 언어 선택
-        this.langToggle.addEventListener('click', () => {
-            this.langMenu.classList.toggle('hidden');
-        });
+        if (this.langToggle) {
+            this.langToggle.addEventListener('click', () => {
+                if (this.langMenu) this.langMenu.classList.toggle('hidden');
+            });
+        }
 
         this.langOptions.forEach(option => {
             option.addEventListener('click', (e) => {
                 const lang = e.target.dataset.lang;
-                i18n.setLanguage(lang);
-                this.langMenu.classList.add('hidden');
+                if (lang && window.i18n && typeof window.i18n.setLanguage === 'function') {
+                    i18n.setLanguage(lang);
+                    if (this.langMenu) this.langMenu.classList.add('hidden');
+                }
             });
         });
 
         // 프리미엄 모달
-        this.premiumClose.addEventListener('click', () => this.closePremiumModal());
-        this.closePremiumBtn.addEventListener('click', () => this.closePremiumModal());
-        this.premiumModal.addEventListener('click', (e) => {
-            if (e.target === this.premiumModal) this.closePremiumModal();
-        });
+        if (this.premiumClose) this.premiumClose.addEventListener('click', () => this.closePremiumModal());
+        if (this.closePremiumBtn) this.closePremiumBtn.addEventListener('click', () => this.closePremiumModal());
+        if (this.premiumModal) {
+            this.premiumModal.addEventListener('click', (e) => {
+                if (e.target === this.premiumModal) this.closePremiumModal();
+            });
+        }
     }
 
     async initI18n() {
-        await i18n.init();
+        try {
+            if (window.i18n && typeof window.i18n.init === 'function') {
+                await i18n.init();
+            }
+        } catch (e) {
+            console.warn('i18n init failed:', e.message);
+        }
         this.updateLanguageButton();
     }
 
