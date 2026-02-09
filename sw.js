@@ -1,26 +1,26 @@
 // 반응속도 테스트 - Service Worker
 const CACHE_NAME = 'reaction-test-v1';
 const urlsToCache = [
-    './',
-    './index.html',
-    './css/style.css',
-    './js/app.js',
-    './js/i18n.js',
-    './manifest.json',
-    './icon-192.svg',
-    './icon-512.svg',
-    './js/locales/ko.json',
-    './js/locales/en.json',
-    './js/locales/zh.json',
-    './js/locales/hi.json',
-    './js/locales/ru.json',
-    './js/locales/ja.json',
-    './js/locales/es.json',
-    './js/locales/pt.json',
-    './js/locales/id.json',
-    './js/locales/tr.json',
-    './js/locales/de.json',
-    './js/locales/fr.json'
+    '/',
+    '/index.html',
+    '/css/style.css',
+    '/js/app.js',
+    '/js/i18n.js',
+    '/manifest.json',
+    '/icon-192.svg',
+    '/icon-512.svg',
+    '/js/locales/ko.json',
+    '/js/locales/en.json',
+    '/js/locales/zh.json',
+    '/js/locales/hi.json',
+    '/js/locales/ru.json',
+    '/js/locales/ja.json',
+    '/js/locales/es.json',
+    '/js/locales/pt.json',
+    '/js/locales/id.json',
+    '/js/locales/tr.json',
+    '/js/locales/de.json',
+    '/js/locales/fr.json'
 ];
 
 // Install
