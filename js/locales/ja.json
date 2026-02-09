@@ -1,0 +1,84 @@
+{
+  "header": {
+    "title": "反応速度テスト",
+    "name": "反応速度テスト",
+    "subtitle": "あなたの神経反応速度は上位何%?"
+  },
+  "intro": {
+    "title": "反応速度テスト",
+    "description": "画面が緑色に変わったら、できるだけ速くタップしてください!",
+    "howToPlay": "ゲーム方法",
+    "step1": "赤い背景の「お待ちください...」を読む",
+    "step2": "画面が緑色に変わり「今!」と表示されたらすぐにタップする",
+    "step3": "反応時間がミリ秒単位で測定されます",
+    "step4": "5回測定後、平均反応速度とグレードを確認する",
+    "gradePreview": "グレード基準",
+    "startButton": "🎬 テストを開始"
+  },
+  "game": {
+    "waiting": "お待ちください...",
+    "go": "今!",
+    "tooEarly": "早すぎます!",
+    "round": "ラウンド",
+    "back": "DopaBrain ホーム"
+  },
+  "results": {
+    "title": "テスト完了!",
+    "averageTime": "平均反応時間",
+    "topPercent": "上位 {percent}",
+    "detailedStats": "測定記録",
+    "round": "ラウンド",
+    "shareButton": "📤 結果をシェア",
+    "shareTitle": "反応速度テスト",
+    "shareText": "私の平均反応時間は{avgTime}ms ({gradeName})です!あなたはどうですか?",
+    "copiedToClipboard": "結果がクリップボードにコピーされました。",
+    "retryButton": "🔄 もう一度挑戦"
+  },
+  "grades": {
+    "superhuman": "超人的",
+    "veryFast": "非常に速い",
+    "fast": "速い",
+    "normal": "普通",
+    "slow": "遅い"
+  },
+  "premium": {
+    "analysisButton": "🧠 AI神経反応タイプ分析",
+    "modalTitle": "AI神経反応タイプ分析",
+    "closeButton": "閉じる",
+    "reactionType": "反応タイプ",
+    "personalityTraits": "性格特性",
+    "suitableCareers": "適職",
+    "improvement": "改善提案",
+    "dataAnalysis": "データ分析",
+    "averageTime": "平均反応時間",
+    "variance": "分散",
+    "consistency": "一貫性",
+    "veryConsistent": "非常に一貫している",
+    "consistent": "一貫している",
+    "somewhat": "ある程度一貫している",
+    "inconsistent": "一貫していない",
+    "improvementSuggestion": "十分な睡眠と休息、瞑想や運動によるストレス軽減は反応時間の改善に役立つ可能性があります。"
+  },
+  "recommendations": {
+    "title": "これも試してみてください",
+    "quizApp": "知識クイズ",
+    "quizDesc": "100問の一般常識問題!",
+    "dreamFortune": "夢占い/運勢",
+    "dreamDesc": "今日の運勢!",
+    "mbtiLove": "MBTI相性",
+    "mbtiDesc": "相性はいい?",
+    "emotionTemp": "感情温度計",
+    "emotionDesc": "私の気持ちは?",
+    "dday": "D-Dカウンター",
+    "ddayDesc": "残り日数を計算!",
+    "lottery": "ロト番号ジェネレーター",
+    "lotteryDesc": "あなたのラッキーナンバー!",
+    "whiteNoise": "ホワイトノイズ",
+    "whiteNoiseDesc": "睡眠プレイリスト!"
+  },
+  "ads": {
+    "banner": "広告エリア",
+    "interstitial": "広告",
+    "closeButton": "閉じる"
+  }
+}

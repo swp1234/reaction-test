@@ -1,0 +1,84 @@
+{
+  "header": {
+    "title": "Tes Waktu Reaksi",
+    "name": "Tes Waktu Reaksi",
+    "subtitle": "Kecepatan reaksi saraf Anda berada di persentil berapa?"
+  },
+  "intro": {
+    "title": "Tes Waktu Reaksi",
+    "description": "Ketuk secepat mungkin saat layar berubah menjadi hijau!",
+    "howToPlay": "Cara Bermain",
+    "step1": "Baca 'Silakan tunggu...' di latar belakang merah",
+    "step2": "Ketuk segera saat layar berubah hijau dan menampilkan 'Sekarang!'",
+    "step3": "Waktu reaksi Anda akan diukur dalam milidetik",
+    "step4": "Setelah 5 pengukuran, periksa rata-rata dan nilai Anda",
+    "gradePreview": "Standar Nilai",
+    "startButton": "🎬 Mulai Tes"
+  },
+  "game": {
+    "waiting": "Silakan tunggu...",
+    "go": "Sekarang!",
+    "tooEarly": "Terlalu cepat!",
+    "round": "Putaran",
+    "back": "Beranda DopaBrain"
+  },
+  "results": {
+    "title": "Tes Selesai!",
+    "averageTime": "Waktu Reaksi Rata-rata",
+    "topPercent": "Top {percent}",
+    "detailedStats": "Catatan Pengukuran",
+    "round": "Putaran",
+    "shareButton": "📤 Bagikan Hasil",
+    "shareTitle": "Tes Waktu Reaksi",
+    "shareText": "Waktu reaksi rata-rata saya adalah {avgTime}ms ({gradeName})! Berapa waktu Anda?",
+    "copiedToClipboard": "Hasil disalin ke papan klip.",
+    "retryButton": "🔄 Coba Lagi"
+  },
+  "grades": {
+    "superhuman": "Supermanusia",
+    "veryFast": "Sangat Cepat",
+    "fast": "Cepat",
+    "normal": "Normal",
+    "slow": "Lambat"
+  },
+  "premium": {
+    "analysisButton": "🧠 Analisis Tipe Reaksi Saraf AI",
+    "modalTitle": "Analisis Tipe Reaksi Saraf AI",
+    "closeButton": "Tutup",
+    "reactionType": "Tipe Reaksi",
+    "personalityTraits": "Sifat Kepribadian",
+    "suitableCareers": "Karir yang Cocok",
+    "improvement": "Saran Perbaikan",
+    "dataAnalysis": "Analisis Data",
+    "averageTime": "Waktu Reaksi Rata-rata",
+    "variance": "Varian",
+    "consistency": "Konsistensi",
+    "veryConsistent": "Sangat Konsisten",
+    "consistent": "Konsisten",
+    "somewhat": "Agak Konsisten",
+    "inconsistent": "Tidak Konsisten",
+    "improvementSuggestion": "Tidur yang cukup, istirahat, dan penghilangan stres melalui meditasi atau olahraga dapat membantu meningkatkan waktu reaksi."
+  },
+  "recommendations": {
+    "title": "Coba Juga Ini",
+    "quizApp": "Kuis Pengetahuan",
+    "quizDesc": "100 pertanyaan pengetahuan umum!",
+    "dreamFortune": "Interpretasi Mimpi/Keberuntungan",
+    "dreamDesc": "Keberuntungan hari ini!",
+    "mbtiLove": "Kompatibilitas MBTI",
+    "mbtiDesc": "Apakah kita cocok?",
+    "emotionTemp": "Termometer Emosi",
+    "emotionDesc": "Emosi saya?",
+    "dday": "Penghitung D-Day",
+    "ddayDesc": "Hitung hari yang tersisa!",
+    "lottery": "Generator Nomor Lotere",
+    "lotteryDesc": "Nomor beruntung Anda!",
+    "whiteNoise": "Kebisingan Putih",
+    "whiteNoiseDesc": "Playlist tidur!"
+  },
+  "ads": {
+    "banner": "Ruang Iklan",
+    "interstitial": "Iklan",
+    "closeButton": "Tutup"
+  }
+}

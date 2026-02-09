@@ -1,0 +1,84 @@
+{
+  "header": {
+    "title": "Teste de Tempo de Reação",
+    "name": "Teste de Tempo de Reação",
+    "subtitle": "Em qual percentil está sua velocidade de reação neuronal?"
+  },
+  "intro": {
+    "title": "Teste de Tempo de Reação",
+    "description": "Toque o mais rápido possível quando a tela ficar verde!",
+    "howToPlay": "Como Jogar",
+    "step1": "Leia 'Por favor aguarde...' no fundo vermelho",
+    "step2": "Toque imediatamente quando a tela ficar verde e mostrar 'Agora!'",
+    "step3": "Seu tempo de reação será medido em milissegundos",
+    "step4": "Após 5 medições, verifique sua média e classificação",
+    "gradePreview": "Critérios de Classificação",
+    "startButton": "🎬 Iniciar Teste"
+  },
+  "game": {
+    "waiting": "Por favor aguarde...",
+    "go": "Agora!",
+    "tooEarly": "Muito rápido!",
+    "round": "Rodada",
+    "back": "Início DopaBrain"
+  },
+  "results": {
+    "title": "Teste Concluído!",
+    "averageTime": "Tempo Médio de Reação",
+    "topPercent": "Top {percent}",
+    "detailedStats": "Registros de Medição",
+    "round": "Rodada",
+    "shareButton": "📤 Compartilhar Resultado",
+    "shareTitle": "Teste de Tempo de Reação",
+    "shareText": "Meu tempo médio de reação é {avgTime}ms ({gradeName})! E o seu?",
+    "copiedToClipboard": "Resultado copiado para a área de transferência.",
+    "retryButton": "🔄 Tentar Novamente"
+  },
+  "grades": {
+    "superhuman": "Super-humano",
+    "veryFast": "Muito Rápido",
+    "fast": "Rápido",
+    "normal": "Normal",
+    "slow": "Lento"
+  },
+  "premium": {
+    "analysisButton": "🧠 Análise de Tipo de Reação Neuronal IA",
+    "modalTitle": "Análise de Tipo de Reação Neuronal IA",
+    "closeButton": "Fechar",
+    "reactionType": "Tipo de Reação",
+    "personalityTraits": "Traços de Personalidade",
+    "suitableCareers": "Carreiras Adequadas",
+    "improvement": "Sugestões de Melhoria",
+    "dataAnalysis": "Análise de Dados",
+    "averageTime": "Tempo Médio de Reação",
+    "variance": "Variação",
+    "consistency": "Consistência",
+    "veryConsistent": "Muito Consistente",
+    "consistent": "Consistente",
+    "somewhat": "Algo Consistente",
+    "inconsistent": "Inconsistente",
+    "improvementSuggestion": "Sono adequado, descanso e alívio do estresse através de meditação ou exercício podem ajudar a melhorar o tempo de reação."
+  },
+  "recommendations": {
+    "title": "Experimente Também Estes",
+    "quizApp": "Quiz de Conhecimentos",
+    "quizDesc": "100 perguntas de conhecimento geral!",
+    "dreamFortune": "Interpretação de Sonhos/Fortuna",
+    "dreamDesc": "Fortuna de hoje!",
+    "mbtiLove": "Compatibilidade MBTI",
+    "mbtiDesc": "Somos compatíveis?",
+    "emotionTemp": "Termômetro de Emoções",
+    "emotionDesc": "Qual é meu sentimento?",
+    "dday": "Contador D-Day",
+    "ddayDesc": "Calcule os dias restantes!",
+    "lottery": "Gerador de Números da Loteria",
+    "lotteryDesc": "Seus números da sorte!",
+    "whiteNoise": "Ruído Branco",
+    "whiteNoiseDesc": "Lista de reprodução do sono!"
+  },
+  "ads": {
+    "banner": "Espaço de Publicidade",
+    "interstitial": "Publicidade",
+    "closeButton": "Fechar"
+  }
+}

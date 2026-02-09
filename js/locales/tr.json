@@ -1,0 +1,84 @@
+{
+  "header": {
+    "title": "Reaksiyon Zamanı Testi",
+    "name": "Reaksiyon Zamanı Testi",
+    "subtitle": "Sinir reaksiyon hızınız yüzde kaçta?"
+  },
+  "intro": {
+    "title": "Reaksiyon Zamanı Testi",
+    "description": "Ekran yeşil olduğunda mümkün olan en hızlı şekilde dokunun!",
+    "howToPlay": "Nasıl Oynanır",
+    "step1": "Kırmızı arka planda 'Lütfen bekleyin...' yazısını okuyun",
+    "step2": "Ekran yeşil olduğunda ve 'Şimdi!' gösterdiğinde hemen dokunun",
+    "step3": "Reaksiyon zamanınız milisaniye cinsinden ölçülecek",
+    "step4": "5 ölçümden sonra ortalamanız ve derecenizi kontrol edin",
+    "gradePreview": "Derece Standartları",
+    "startButton": "🎬 Testi Başlat"
+  },
+  "game": {
+    "waiting": "Lütfen bekleyin...",
+    "go": "Şimdi!",
+    "tooEarly": "Çok erken!",
+    "round": "Tur",
+    "back": "DopaBrain Anasayfa"
+  },
+  "results": {
+    "title": "Test Tamamlandı!",
+    "averageTime": "Ortalama Reaksiyon Zamanı",
+    "topPercent": "En Üst {percent}",
+    "detailedStats": "Ölçüm Kayıtları",
+    "round": "Tur",
+    "shareButton": "📤 Sonuçları Paylaş",
+    "shareTitle": "Reaksiyon Zamanı Testi",
+    "shareText": "Ortalama reaksiyon zamanım {avgTime}ms ({gradeName})! Sizin kaç?",
+    "copiedToClipboard": "Sonuç panoya kopyalandı.",
+    "retryButton": "🔄 Tekrar Deneyin"
+  },
+  "grades": {
+    "superhuman": "Üstün İnsan",
+    "veryFast": "Çok Hızlı",
+    "fast": "Hızlı",
+    "normal": "Normal",
+    "slow": "Yavaş"
+  },
+  "premium": {
+    "analysisButton": "🧠 AI Sinir Reaksiyon Tipi Analizi",
+    "modalTitle": "AI Sinir Reaksiyon Tipi Analizi",
+    "closeButton": "Kapat",
+    "reactionType": "Reaksiyon Tipi",
+    "personalityTraits": "Kişilik Özellikleri",
+    "suitableCareers": "Uygun Kariyerler",
+    "improvement": "İyileştirme Önerileri",
+    "dataAnalysis": "Veri Analizi",
+    "averageTime": "Ortalama Reaksiyon Zamanı",
+    "variance": "Varyans",
+    "consistency": "Tutarlılık",
+    "veryConsistent": "Çok Tutarlı",
+    "consistent": "Tutarlı",
+    "somewhat": "Biraz Tutarlı",
+    "inconsistent": "Tutarsız",
+    "improvementSuggestion": "Yeterli uyku, dinlenme ve meditasyon veya egzersiz yoluyla stres giderme reaksiyon zamanını iyileştirmeye yardımcı olabilir."
+  },
+  "recommendations": {
+    "title": "Bunları da Deneyin",
+    "quizApp": "Bilgi Quizi",
+    "quizDesc": "100 genel bilgi sorusu!",
+    "dreamFortune": "Rüya Yorumu/Şans",
+    "dreamDesc": "Bugünün şansı!",
+    "mbtiLove": "MBTI Uyumluluğu",
+    "mbtiDesc": "Uyumlu muyuz?",
+    "emotionTemp": "Duygu Termometresi",
+    "emotionDesc": "Duygum ne?",
+    "dday": "D-Day Sayacı",
+    "ddayDesc": "Kalan günleri hesapla!",
+    "lottery": "Piyango Numarası Üreteci",
+    "lotteryDesc": "Şans numaralarınız!",
+    "whiteNoise": "Beyaz Gürültü",
+    "whiteNoiseDesc": "Uyku çalma listesi!"
+  },
+  "ads": {
+    "banner": "Reklam Alanı",
+    "interstitial": "Reklam",
+    "closeButton": "Kapat"
+  }
+}

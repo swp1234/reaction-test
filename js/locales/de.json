@@ -1,0 +1,84 @@
+{
+  "header": {
+    "title": "Reaktionszeittest",
+    "name": "Reaktionszeittest",
+    "subtitle": "In welchem Perzentil liegt Ihre Nervenerreaktionsgeschwindigkeit?"
+  },
+  "intro": {
+    "title": "Reaktionszeittest",
+    "description": "Tippen Sie so schnell wie möglich, wenn der Bildschirm grün wird!",
+    "howToPlay": "Spielanleitung",
+    "step1": "Lesen Sie 'Bitte warten...' auf dem roten Hintergrund",
+    "step2": "Tippen Sie sofort, wenn der Bildschirm grün wird und 'Jetzt!' anzeigt",
+    "step3": "Ihre Reaktionszeit wird in Millisekunden gemessen",
+    "step4": "Nach 5 Messungen überprüfen Sie Ihren Durchschnitt und Ihre Note",
+    "gradePreview": "Notenstandards",
+    "startButton": "🎬 Test starten"
+  },
+  "game": {
+    "waiting": "Bitte warten...",
+    "go": "Jetzt!",
+    "tooEarly": "Zu früh!",
+    "round": "Runde",
+    "back": "DopaBrain Startseite"
+  },
+  "results": {
+    "title": "Test abgeschlossen!",
+    "averageTime": "Durchschnittliche Reaktionszeit",
+    "topPercent": "Top {percent}",
+    "detailedStats": "Messdatensätze",
+    "round": "Runde",
+    "shareButton": "📤 Ergebnisse teilen",
+    "shareTitle": "Reaktionszeittest",
+    "shareText": "Meine durchschnittliche Reaktionszeit beträgt {avgTime}ms ({gradeName})! Wie ist deine?",
+    "copiedToClipboard": "Ergebnis in die Zwischenablage kopiert.",
+    "retryButton": "🔄 Erneut versuchen"
+  },
+  "grades": {
+    "superhuman": "Übermenschlich",
+    "veryFast": "Sehr schnell",
+    "fast": "Schnell",
+    "normal": "Normal",
+    "slow": "Langsam"
+  },
+  "premium": {
+    "analysisButton": "🧠 KI-Analyse des Nervenerreaktionstyps",
+    "modalTitle": "KI-Analyse des Nervenerreaktionstyps",
+    "closeButton": "Schließen",
+    "reactionType": "Reaktionstyp",
+    "personalityTraits": "Persönlichkeitsmerkmale",
+    "suitableCareers": "Geeignete Karrieren",
+    "improvement": "Verbesserungsvorschläge",
+    "dataAnalysis": "Datenanalyse",
+    "averageTime": "Durchschnittliche Reaktionszeit",
+    "variance": "Varianz",
+    "consistency": "Konsistenz",
+    "veryConsistent": "Sehr konsistent",
+    "consistent": "Konsistent",
+    "somewhat": "Einigermaßen konsistent",
+    "inconsistent": "Inkonsistent",
+    "improvementSuggestion": "Ausreichend Schlaf, Ruhe und Stressabbau durch Meditation oder Bewegung können zur Verbesserung der Reaktionszeit beitragen."
+  },
+  "recommendations": {
+    "title": "Versuchen Sie auch diese",
+    "quizApp": "Wissensquiz",
+    "quizDesc": "100 Allgemeinwissens-Fragen!",
+    "dreamFortune": "Traumdeutung/Vermögen",
+    "dreamDesc": "Das Vermögen von heute!",
+    "mbtiLove": "MBTI-Kompatibilität",
+    "mbtiDesc": "Passen wir zusammen?",
+    "emotionTemp": "Gefühlsthermometer",
+    "emotionDesc": "Wie ist mein Gefühl?",
+    "dday": "D-Day-Zähler",
+    "ddayDesc": "Verbleibende Tage berechnen!",
+    "lottery": "Lottozahlengenerator",
+    "lotteryDesc": "Ihre Glückszahlen!",
+    "whiteNoise": "Weißes Rauschen",
+    "whiteNoiseDesc": "Schlaf-Wiedergabeliste!"
+  },
+  "ads": {
+    "banner": "Werberaum",
+    "interstitial": "Anzeige",
+    "closeButton": "Schließen"
+  }
+}

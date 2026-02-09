@@ -1,0 +1,84 @@
+{
+  "header": {
+    "title": "Test de Temps de Réaction",
+    "name": "Test de Temps de Réaction",
+    "subtitle": "Dans quel percentile se situe votre vitesse de réaction nerveuse?"
+  },
+  "intro": {
+    "title": "Test de Temps de Réaction",
+    "description": "Appuyez le plus rapidement possible quand l'écran devient vert!",
+    "howToPlay": "Comment Jouer",
+    "step1": "Lisez 'Veuillez patienter...' sur le fond rouge",
+    "step2": "Appuyez immédiatement quand l'écran devient vert et affiche 'Maintenant!'",
+    "step3": "Votre temps de réaction sera mesuré en millisecondes",
+    "step4": "Après 5 mesures, vérifiez votre moyenne et votre note",
+    "gradePreview": "Normes de Notation",
+    "startButton": "🎬 Démarrer le Test"
+  },
+  "game": {
+    "waiting": "Veuillez patienter...",
+    "go": "Maintenant!",
+    "tooEarly": "Trop tôt!",
+    "round": "Manche",
+    "back": "Accueil DopaBrain"
+  },
+  "results": {
+    "title": "Test Terminé!",
+    "averageTime": "Temps de Réaction Moyen",
+    "topPercent": "Top {percent}",
+    "detailedStats": "Dossiers de Mesure",
+    "round": "Manche",
+    "shareButton": "📤 Partager le Résultat",
+    "shareTitle": "Test de Temps de Réaction",
+    "shareText": "Mon temps de réaction moyen est {avgTime}ms ({gradeName})! Et le vôtre?",
+    "copiedToClipboard": "Résultat copié dans le presse-papiers.",
+    "retryButton": "🔄 Réessayer"
+  },
+  "grades": {
+    "superhuman": "Surhumain",
+    "veryFast": "Très Rapide",
+    "fast": "Rapide",
+    "normal": "Normal",
+    "slow": "Lent"
+  },
+  "premium": {
+    "analysisButton": "🧠 Analyse du Type de Réaction Nerveuse par IA",
+    "modalTitle": "Analyse du Type de Réaction Nerveuse par IA",
+    "closeButton": "Fermer",
+    "reactionType": "Type de Réaction",
+    "personalityTraits": "Traits de Personnalité",
+    "suitableCareers": "Carrières Adaptées",
+    "improvement": "Suggestions d'Amélioration",
+    "dataAnalysis": "Analyse des Données",
+    "averageTime": "Temps de Réaction Moyen",
+    "variance": "Variance",
+    "consistency": "Cohérence",
+    "veryConsistent": "Très Cohérent",
+    "consistent": "Cohérent",
+    "somewhat": "Quelque Peu Cohérent",
+    "inconsistent": "Incohérent",
+    "improvementSuggestion": "Un sommeil adéquat, du repos et une réduction du stress par la méditation ou l'exercice peuvent aider à améliorer le temps de réaction."
+  },
+  "recommendations": {
+    "title": "Essayez Aussi Ceux-ci",
+    "quizApp": "Quiz de Connaissances",
+    "quizDesc": "100 questions de culture générale!",
+    "dreamFortune": "Interprétation des Rêves/Destin",
+    "dreamDesc": "Destin d'aujourd'hui!",
+    "mbtiLove": "Compatibilité MBTI",
+    "mbtiDesc": "Sommes-nous compatibles?",
+    "emotionTemp": "Thermomètre d'Émotions",
+    "emotionDesc": "Quel est mon sentiment?",
+    "dday": "Compte à Rebours D-Day",
+    "ddayDesc": "Calculez les jours restants!",
+    "lottery": "Générateur de Numéros de Loterie",
+    "lotteryDesc": "Vos numéros de chance!",
+    "whiteNoise": "Bruit Blanc",
+    "whiteNoiseDesc": "Liste de lecture pour dormir!"
+  },
+  "ads": {
+    "banner": "Espace Publicitaire",
+    "interstitial": "Publicité",
+    "closeButton": "Fermer"
+  }
+}

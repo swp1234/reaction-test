@@ -1,0 +1,84 @@
+{
+  "header": {
+    "title": "反应速度测试",
+    "name": "反应速度测试",
+    "subtitle": "你的神经反应速度在前百分之几?"
+  },
+  "intro": {
+    "title": "反应速度测试",
+    "description": "当屏幕变成绿色时,尽快点击!",
+    "howToPlay": "游戏方法",
+    "step1": "在红色背景上看到'请等待...'",
+    "step2": "屏幕变绿并显示'现在!'时立即点击",
+    "step3": "反应时间将以毫秒为单位测量",
+    "step4": "5次测量后,查看平均值和等级",
+    "gradePreview": "等级标准",
+    "startButton": "🎬 开始测试"
+  },
+  "game": {
+    "waiting": "请等待...",
+    "go": "现在!",
+    "tooEarly": "太早了!",
+    "round": "轮次",
+    "back": "DopaBrain 主页"
+  },
+  "results": {
+    "title": "测试完成!",
+    "averageTime": "平均反应时间",
+    "topPercent": "前 {percent}",
+    "detailedStats": "测量记录",
+    "round": "轮次",
+    "shareButton": "📤 分享结果",
+    "shareTitle": "反应速度测试",
+    "shareText": "我的平均反应时间是 {avgTime}ms ({gradeName})!你的呢?",
+    "copiedToClipboard": "结果已复制到剪贴板。",
+    "retryButton": "🔄 重新尝试"
+  },
+  "grades": {
+    "superhuman": "超人类",
+    "veryFast": "非常快",
+    "fast": "快",
+    "normal": "普通",
+    "slow": "慢"
+  },
+  "premium": {
+    "analysisButton": "🧠 AI 神经反应类型分析",
+    "modalTitle": "AI 神经反应类型分析",
+    "closeButton": "关闭",
+    "reactionType": "反应类型",
+    "personalityTraits": "性格特征",
+    "suitableCareers": "适合职业",
+    "improvement": "改进建议",
+    "dataAnalysis": "数据分析",
+    "averageTime": "平均反应时间",
+    "variance": "差异",
+    "consistency": "一致性",
+    "veryConsistent": "非常一致",
+    "consistent": "一致",
+    "somewhat": "有一定一致性",
+    "inconsistent": "不一致",
+    "improvementSuggestion": "充足的睡眠和休息,以及通过冥想或运动进行压力缓解可以帮助改善反应时间。"
+  },
+  "recommendations": {
+    "title": "也试试这些",
+    "quizApp": "知识竞答",
+    "quizDesc": "100道常识题!",
+    "dreamFortune": "梦境运势",
+    "dreamDesc": "今日运势!",
+    "mbtiLove": "MBTI 配对",
+    "mbtiDesc": "我们合得来吗?",
+    "emotionTemp": "情绪温度",
+    "emotionDesc": "我的感受?",
+    "dday": "D-Day 计数器",
+    "ddayDesc": "计算剩余天数!",
+    "lottery": "彩票号码生成器",
+    "lotteryDesc": "你的幸运号码!",
+    "whiteNoise": "白噪音",
+    "whiteNoiseDesc": "睡眠播放列表!"
+  },
+  "ads": {
+    "banner": "广告区域",
+    "interstitial": "广告",
+    "closeButton": "关闭"
+  }
+}

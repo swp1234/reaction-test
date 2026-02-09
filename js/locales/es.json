@@ -1,0 +1,84 @@
+{
+  "header": {
+    "title": "Prueba de Tiempo de Reacción",
+    "name": "Prueba de Tiempo de Reacción",
+    "subtitle": "¿En qué percentil está tu velocidad de reacción neuronal?"
+  },
+  "intro": {
+    "title": "Prueba de Tiempo de Reacción",
+    "description": "¡Toca lo más rápido posible cuando la pantalla se vuelva verde!",
+    "howToPlay": "Cómo Jugar",
+    "step1": "Lee 'Por favor espere...' en el fondo rojo",
+    "step2": "Toca inmediatamente cuando la pantalla se vuelva verde y muestre '¡Ahora!'",
+    "step3": "Tu tiempo de reacción se medirá en milisegundos",
+    "step4": "Después de 5 mediciones, verifica tu promedio y calificación",
+    "gradePreview": "Estándares de Calificación",
+    "startButton": "🎬 Iniciar Prueba"
+  },
+  "game": {
+    "waiting": "Por favor espere...",
+    "go": "¡Ahora!",
+    "tooEarly": "¡Demasiado pronto!",
+    "round": "Ronda",
+    "back": "Inicio de DopaBrain"
+  },
+  "results": {
+    "title": "¡Prueba Completada!",
+    "averageTime": "Tiempo Promedio de Reacción",
+    "topPercent": "Top {percent}",
+    "detailedStats": "Registros de Medición",
+    "round": "Ronda",
+    "shareButton": "📤 Compartir Resultado",
+    "shareTitle": "Prueba de Tiempo de Reacción",
+    "shareText": "Mi tiempo promedio de reacción es {avgTime}ms ({gradeName}). ¿Y el tuyo?",
+    "copiedToClipboard": "Resultado copiado al portapapeles.",
+    "retryButton": "🔄 Intentar Nuevamente"
+  },
+  "grades": {
+    "superhuman": "Sobrehumano",
+    "veryFast": "Muy Rápido",
+    "fast": "Rápido",
+    "normal": "Normal",
+    "slow": "Lento"
+  },
+  "premium": {
+    "analysisButton": "🧠 Análisis de Tipo de Reacción Neuronal IA",
+    "modalTitle": "Análisis de Tipo de Reacción Neuronal IA",
+    "closeButton": "Cerrar",
+    "reactionType": "Tipo de Reacción",
+    "personalityTraits": "Rasgos de Personalidad",
+    "suitableCareers": "Carreras Adecuadas",
+    "improvement": "Sugerencias de Mejora",
+    "dataAnalysis": "Análisis de Datos",
+    "averageTime": "Tiempo Promedio de Reacción",
+    "variance": "Variación",
+    "consistency": "Consistencia",
+    "veryConsistent": "Muy Consistente",
+    "consistent": "Consistente",
+    "somewhat": "Algo Consistente",
+    "inconsistent": "Inconsistente",
+    "improvementSuggestion": "El sueño adecuado, el descanso y el alivio del estrés a través de la meditación o el ejercicio pueden ayudar a mejorar el tiempo de reacción."
+  },
+  "recommendations": {
+    "title": "Prueba También Estas",
+    "quizApp": "Quiz de Conocimientos",
+    "quizDesc": "¡100 preguntas de cultura general!",
+    "dreamFortune": "Interpretación de Sueños/Fortuna",
+    "dreamDesc": "¡La fortuna de hoy!",
+    "mbtiLove": "Compatibilidad MBTI",
+    "mbtiDesc": "¿Somos compatibles?",
+    "emotionTemp": "Termómetro de Emociones",
+    "emotionDesc": "¿Cuál es mi sentimiento?",
+    "dday": "Contador D-Day",
+    "ddayDesc": "¡Calcula los días restantes!",
+    "lottery": "Generador de Números de Lotería",
+    "lotteryDesc": "¡Tus números de suerte!",
+    "whiteNoise": "Ruido Blanco",
+    "whiteNoiseDesc": "¡Playlist para dormir!"
+  },
+  "ads": {
+    "banner": "Espacio Publicitario",
+    "interstitial": "Publicidad",
+    "closeButton": "Cerrar"
+  }
+}

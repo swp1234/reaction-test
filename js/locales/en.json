@@ -1,0 +1,84 @@
+{
+  "header": {
+    "title": "Reaction Time Test",
+    "name": "Reaction Time Test",
+    "subtitle": "What percentile is your neural reaction speed?"
+  },
+  "intro": {
+    "title": "Reaction Time Test",
+    "description": "Tap as quickly as possible when the screen turns green!",
+    "howToPlay": "How to Play",
+    "step1": "Wait for the red background that says 'Wait...'",
+    "step2": "Tap immediately when the screen turns green and shows 'Go!'",
+    "step3": "Your reaction time will be measured in milliseconds",
+    "step4": "After 5 measurements, check your average and grade",
+    "gradePreview": "Grade Standards",
+    "startButton": "🎬 Start Test"
+  },
+  "game": {
+    "waiting": "Wait...",
+    "go": "Go!",
+    "tooEarly": "Too Early!",
+    "round": "Round",
+    "back": "DopaBrain Home"
+  },
+  "results": {
+    "title": "Test Complete!",
+    "averageTime": "Average Reaction Time",
+    "topPercent": "Top {percent}",
+    "detailedStats": "Measurement Records",
+    "round": "Round",
+    "shareButton": "📤 Share Results",
+    "shareTitle": "Reaction Time Test",
+    "shareText": "My average reaction time is {avgTime}ms ({gradeName})! What's yours?",
+    "copiedToClipboard": "Results copied to clipboard.",
+    "retryButton": "🔄 Try Again"
+  },
+  "grades": {
+    "superhuman": "Superhuman",
+    "veryFast": "Very Fast",
+    "fast": "Fast",
+    "normal": "Normal",
+    "slow": "Slow"
+  },
+  "premium": {
+    "analysisButton": "🧠 AI Neural Reaction Type Analysis",
+    "modalTitle": "AI Neural Reaction Type Analysis",
+    "closeButton": "Close",
+    "reactionType": "Reaction Type",
+    "personalityTraits": "Personality Traits",
+    "suitableCareers": "Suitable Careers",
+    "improvement": "Improvement Suggestions",
+    "dataAnalysis": "Data Analysis",
+    "averageTime": "Average Reaction Time",
+    "variance": "Variance",
+    "consistency": "Consistency",
+    "veryConsistent": "Very Consistent",
+    "consistent": "Consistent",
+    "somewhat": "Somewhat Consistent",
+    "inconsistent": "Inconsistent",
+    "improvementSuggestion": "Adequate sleep, rest, and stress relief through meditation or exercise can help improve reaction time."
+  },
+  "recommendations": {
+    "title": "Try These Too",
+    "quizApp": "Knowledge Quiz",
+    "quizDesc": "100 general knowledge questions!",
+    "dreamFortune": "Dream Fortune",
+    "dreamDesc": "Today's fortune!",
+    "mbtiLove": "MBTI Compatibility",
+    "mbtiDesc": "Are we compatible?",
+    "emotionTemp": "Emotion Temperature",
+    "emotionDesc": "What's my feeling?",
+    "dday": "D-Day Counter",
+    "ddayDesc": "Calculate remaining days!",
+    "lottery": "Lottery Number Generator",
+    "lotteryDesc": "Your lucky numbers!",
+    "whiteNoise": "White Noise",
+    "whiteNoiseDesc": "Sleep playlist!"
+  },
+  "ads": {
+    "banner": "Advertisement Space",
+    "interstitial": "Advertisement",
+    "closeButton": "Close"
+  }
+}
