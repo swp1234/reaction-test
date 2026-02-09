@@ -437,4 +437,17 @@ class ReactionTest {
 // 초기화
 document.addEventListener('DOMContentLoaded', () => {
     const app = new ReactionTest();
+    initSoundToggle();
 });
+
+// Sound toggle functionality
+function initSoundToggle() {
+    const btn = document.getElementById('sound-toggle');
+    if (!btn || !window.sfx) return;
+
+    btn.textContent = window.sfx.enabled ? '🔊' : '🔇';
+    btn.addEventListener('click', () => {
+        window.sfx.toggle();
+        btn.textContent = window.sfx.enabled ? '🔊' : '🔇';
+    });
+}
