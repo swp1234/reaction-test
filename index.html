@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
     <meta name="robots" content="max-image-preview:large">
     <title>반응속도 테스트 ⚡ - 당신의 신경 반응은? | 무료 테스트</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
     <meta name="description" content="반응속도를 5회 측정하여 당신의 신경 반응 속도를 테스트하세요! ⚡ 상위 몇 %인지 확인하고 친구들과 공유해보세요. 무료 온라인 테스트!">
     <meta name="keywords" content="반응속도 테스트, 신경 반응, 반응 속도 측정, 게임, 심리테스트, 바이럴 테스트, 온라인 테스트, 반응 능력 측정">
     <link rel="canonical" href="https://dopabrain.com/reaction-test/">
@@ -14,6 +14,10 @@
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="icon-192.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="icon-192.svg">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <!-- Prefetch app scripts -->
+    <link rel="prefetch" href="js/app.js">
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J8GSWM40TV');</script>
@@ -339,7 +343,7 @@
         <span class="ad-placeholder" data-i18n="ads.banner">광고 영역</span>
     </div>
 
-    <script src="js/i18n.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/app.js" defer></script>
 </body>
 </html>
