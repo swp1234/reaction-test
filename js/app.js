@@ -12,6 +12,15 @@ class ReactionTest {
         this.initElements();
         this.initEventListeners();
         this.initI18n();
+
+        // Safety timeout: hide loader after 3s even if i18n fails
+        setTimeout(() => {
+            const loader = document.getElementById('app-loader');
+            if (loader && !loader.classList.contains('hidden')) {
+                loader.classList.add('hidden');
+                setTimeout(() => loader.remove(), 300);
+            }
+        }, 3000);
     }
 
     initElements() {
@@ -55,6 +64,21 @@ class ReactionTest {
     }
 
     initEventListeners() {
+        // Theme toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            themeToggle.textContent = savedTheme === 'light' ? '🌙' : '☀️';
+            themeToggle.addEventListener('click', () => {
+                const current = document.documentElement.getAttribute('data-theme');
+                const next = current === 'light' ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next);
+                themeToggle.textContent = next === 'light' ? '🌙' : '☀️';
+            });
+        }
+
         // Safe event listener attachment with null checks
         if (this.startBtn) this.startBtn.addEventListener('click', () => this.startTest());
         if (this.retryBtn) this.retryBtn.addEventListener('click', () => this.startTest());
@@ -107,6 +131,13 @@ class ReactionTest {
             console.warn('i18n init failed:', e.message);
         }
         this.updateLanguageButton();
+
+        // Hide app loader after i18n is ready
+        const loader = document.getElementById('app-loader');
+        if (loader) {
+            loader.classList.add('hidden');
+            setTimeout(() => loader.remove(), 300);
+        }
     }
 
     updateLanguageButton() {
@@ -438,13 +469,6 @@ class ReactionTest {
 document.addEventListener('DOMContentLoaded', () => {
     const app = new ReactionTest();
     initSoundToggle();
-
-    // Hide app loader
-    const loader = document.getElementById('app-loader');
-    if (loader) {
-        loader.classList.add('hidden');
-        setTimeout(() => loader.remove(), 300);
-    }
 });
 
 // Sound toggle functionality
