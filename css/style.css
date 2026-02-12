@@ -480,6 +480,12 @@ body {
     50% { transform: scale(1.03); box-shadow: 0 6px 25px rgba(0, 200, 83, 0.5); }
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .btn-cta-pulse {
+        animation: none !important;
+    }
+}
+
 /* 게임 화면 */
 .game-area {
     width: 100%;
