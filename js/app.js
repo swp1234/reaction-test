@@ -156,6 +156,10 @@ class ReactionTest {
         this.currentRound = 0;
         this.showGameScreen();
         this.nextRound();
+        // GA4 engagement on first interaction
+        if (typeof gtag === 'function') {
+            gtag('event', 'engagement', { event_category: 'reaction_test', event_label: 'first_interaction' });
+        }
     }
 
     nextRound() {
@@ -258,6 +262,20 @@ class ReactionTest {
                 <div class="time-label">${i18n.t('results.round')} ${index + 1}</div>
             </div>
         `).join('');
+
+        // Best score tracking with retry encouragement
+        const bestTime = parseInt(localStorage.getItem('reaction-best') || '9999');
+        if (avgTime < bestTime) {
+            localStorage.setItem('reaction-best', avgTime.toString());
+            const resultIcon = document.getElementById('result-icon');
+            if (resultIcon) resultIcon.textContent = '🏆';
+        }
+        // Show best score comparison to encourage retry
+        const storedBest = parseInt(localStorage.getItem('reaction-best') || avgTime.toString());
+        const retryBtn = document.getElementById('retry-btn');
+        if (retryBtn && avgTime > storedBest) {
+            retryBtn.textContent = '🔄 ' + (i18n.t('results.retryButton') || 'Try again') + ' (Best: ' + storedBest + 'ms)';
+        }
 
         // GA4 이벤트 추적
         if (window.gtag) {
@@ -470,6 +488,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const app = new ReactionTest();
     initSoundToggle();
 });
+
+// GA4 engagement tracking (scroll + timer)
+(function() {
+    let scrollFired = false;
+    window.addEventListener('scroll', function() {
+        if (!scrollFired && window.scrollY > 100) {
+            scrollFired = true;
+            if (typeof gtag === 'function') gtag('event', 'scroll_engagement', { engagement_type: 'scroll' });
+        }
+    }, { passive: true });
+    setTimeout(function() {
+        if (typeof gtag === 'function') gtag('event', 'timer_engagement', { engagement_time_msec: 5000 });
+    }, 5000);
+})();
 
 // Sound toggle functionality
 function initSoundToggle() {
