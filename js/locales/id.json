@@ -1,4 +1,7 @@
 {
+  "app": {
+    "skipLink": "Lewati ke konten"
+  },
   "header": {
     "title": "Tes Waktu Reaksi",
     "name": "Tes Waktu Reaksi",
@@ -32,7 +35,8 @@
     "shareTitle": "Tes Waktu Reaksi",
     "shareText": "Waktu reaksi rata-rata saya adalah {avgTime}ms ({gradeName})! Berapa waktu Anda?",
     "copiedToClipboard": "Hasil disalin ke papan klip.",
-    "retryButton": "🔄 Coba Lagi"
+    "retryButton": "🔄 Coba Lagi",
+    "bestLabel": "Terbaik"
   },
   "grades": {
     "superhuman": "Supermanusia",

@@ -1,4 +1,7 @@
 {
+  "app": {
+    "skipLink": "Skip to content"
+  },
   "header": {
     "title": "Reaction Time Test",
     "name": "Reaction Time Test",
@@ -32,7 +35,8 @@
     "shareTitle": "Reaction Time Test",
     "shareText": "My average reaction time is {avgTime}ms ({gradeName})! What's yours?",
     "copiedToClipboard": "Results copied to clipboard.",
-    "retryButton": "🔄 Try Again"
+    "retryButton": "🔄 Try Again",
+    "bestLabel": "Best"
   },
   "grades": {
     "superhuman": "Superhuman",

@@ -1,4 +1,7 @@
 {
+  "app": {
+    "skipLink": "İçeriğe geç"
+  },
   "header": {
     "title": "Reaksiyon Zamanı Testi",
     "name": "Reaksiyon Zamanı Testi",
@@ -32,7 +35,8 @@
     "shareTitle": "Reaksiyon Zamanı Testi",
     "shareText": "Ortalama reaksiyon zamanım {avgTime}ms ({gradeName})! Sizin kaç?",
     "copiedToClipboard": "Sonuç panoya kopyalandı.",
-    "retryButton": "🔄 Tekrar Deneyin"
+    "retryButton": "🔄 Tekrar Deneyin",
+    "bestLabel": "En iyi"
   },
   "grades": {
     "superhuman": "Üstün İnsan",

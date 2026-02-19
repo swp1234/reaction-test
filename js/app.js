@@ -274,7 +274,7 @@ class ReactionTest {
         const storedBest = parseInt(localStorage.getItem('reaction-best') || avgTime.toString());
         const retryBtn = document.getElementById('retry-btn');
         if (retryBtn && avgTime > storedBest) {
-            retryBtn.textContent = '🔄 ' + (i18n.t('results.retryButton') || 'Try again') + ' (Best: ' + storedBest + 'ms)';
+            retryBtn.textContent = '🔄 ' + i18n.t('results.retryButton') + ' (' + (i18n.t('results.bestLabel') || 'Best') + ': ' + storedBest + 'ms)';
         }
 
         // GA4 이벤트 추적

@@ -1,4 +1,7 @@
 {
+  "app": {
+    "skipLink": "跳到内容"
+  },
   "header": {
     "title": "反应速度测试",
     "name": "反应速度测试",
@@ -32,7 +35,8 @@
     "shareTitle": "反应速度测试",
     "shareText": "我的平均反应时间是 {avgTime}ms ({gradeName})!你的呢?",
     "copiedToClipboard": "结果已复制到剪贴板。",
-    "retryButton": "🔄 重新尝试"
+    "retryButton": "🔄 重新尝试",
+    "bestLabel": "最佳"
   },
   "grades": {
     "superhuman": "超人类",

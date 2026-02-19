@@ -1,4 +1,7 @@
 {
+  "app": {
+    "skipLink": "Aller au contenu"
+  },
   "header": {
     "title": "Test de Temps de Réaction",
     "name": "Test de Temps de Réaction",
@@ -32,7 +35,8 @@
     "shareTitle": "Test de Temps de Réaction",
     "shareText": "Mon temps de réaction moyen est {avgTime}ms ({gradeName})! Et le vôtre?",
     "copiedToClipboard": "Résultat copié dans le presse-papiers.",
-    "retryButton": "🔄 Réessayer"
+    "retryButton": "🔄 Réessayer",
+    "bestLabel": "Meilleur"
   },
   "grades": {
     "superhuman": "Surhumain",
