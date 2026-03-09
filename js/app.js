@@ -293,6 +293,18 @@ class ReactionTest {
             DailyStreak.report(played);
         }
 
+        // Report achievements
+        if (typeof GameAchievements !== 'undefined') {
+            const bestMs = parseInt(localStorage.getItem('reaction-best')) || 9999;
+            GameAchievements.report({
+                bestReaction: bestMs < 9999 ? 1 : 0,
+                sub300: bestMs <= 300 ? 1 : 0,
+                sub200: bestMs <= 200 ? 1 : 0,
+                sub150: bestMs <= 150 ? 1 : 0,
+                gamesPlayed: parseInt(localStorage.getItem('reaction_gamesPlayed')) || 0
+            });
+        }
+
         // GA4 이벤트 추적
         if (window.gtag) {
             gtag('event', 'reaction_test_completed', {
@@ -542,6 +554,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const app = new ReactionTest();
     initSoundToggle();
     if (typeof DailyStreak !== 'undefined') DailyStreak.init({ gameId: 'reaction-test', bestScoreKey: 'reaction_gamesPlayed', minTarget: 1 });
+    if (typeof GameAchievements !== 'undefined') GameAchievements.init({
+        gameId: 'reaction-test',
+        defs: [
+            { id: 'best_500', stat: 'bestReaction', target: 1, icon: '\u26A1', name: 'First Try' },
+            { id: 'best_300', stat: 'sub300', target: 1, icon: '\u26A1', name: 'Quick Reflexes' },
+            { id: 'best_200', stat: 'sub200', target: 1, icon: '\u26A1', name: 'Lightning Fast' },
+            { id: 'best_150', stat: 'sub150', target: 1, icon: '\u26A1', name: 'Superhuman' },
+            { id: 'games_10', stat: 'gamesPlayed', target: 10, icon: '\uD83C\uDFAE', name: 'Regular' },
+            { id: 'games_50', stat: 'gamesPlayed', target: 50, icon: '\uD83C\uDFAE', name: 'Dedicated' },
+        ]
+    });
 });
 
 // GA4 engagement tracking (scroll + timer)
