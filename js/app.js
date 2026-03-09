@@ -248,9 +248,17 @@ class ReactionTest {
     }
 
     showResultScreen() {
-        this.gameScreen.classList.remove('active');
-        this.resultScreen.classList.add('active');
-        this.calculateResults();
+        const showResult = () => {
+            this.gameScreen.classList.remove('active');
+            this.resultScreen.classList.add('active');
+            this.calculateResults();
+        };
+
+        if (typeof GameAds !== 'undefined') {
+            GameAds.showInterstitial({ onComplete: showResult });
+        } else {
+            showResult();
+        }
     }
 
     calculateResults() {
@@ -552,6 +560,7 @@ class ReactionTest {
 // 초기화
 document.addEventListener('DOMContentLoaded', () => {
     const app = new ReactionTest();
+    if (typeof GameAds !== 'undefined') GameAds.init();
     initSoundToggle();
     if (typeof DailyStreak !== 'undefined') DailyStreak.init({ gameId: 'reaction-test', bestScoreKey: 'reaction_gamesPlayed', minTarget: 1 });
     if (typeof GameAchievements !== 'undefined') GameAchievements.init({
