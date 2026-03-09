@@ -204,6 +204,7 @@ class ReactionTest {
             if (this.startTime === null) {
                 this.gameArea.classList.add('early-tap');
                 this.gameStatus.textContent = i18n.t('game.tooEarly');
+                this.shakeElement(this.gameArea);
 
                 // 재시도
                 setTimeout(() => {
@@ -219,9 +220,12 @@ class ReactionTest {
         this.recordTime(reactionTime);
         this.isActive = false;
 
-        // 결과 표시
+        // 결과 표시 + floating text
         this.gameStatus.textContent = `${reactionTime}ms`;
         this.gameArea.style.opacity = '0.8';
+        const color = reactionTime <= 200 ? '#2ecc71' : reactionTime <= 300 ? '#f39c12' : '#e74c3c';
+        this.showFloatingTime(`${reactionTime}ms`, color);
+        if (reactionTime <= 200) this.spawnParticles(this.gameArea);
 
         setTimeout(() => {
             this.nextRound();
@@ -481,7 +485,45 @@ class ReactionTest {
     closePremiumModal() {
         this.premiumModal.classList.add('hidden');
     }
+
+    shakeElement(el) {
+        el.style.animation = 'rt-shake 0.4s ease';
+        setTimeout(() => { el.style.animation = ''; }, 450);
+    }
+
+    showFloatingTime(text, color) {
+        const el = document.createElement('div');
+        el.textContent = text;
+        el.style.cssText = `position:fixed;top:40%;left:50%;transform:translateX(-50%);font-size:32px;font-weight:bold;color:${color};z-index:9999;pointer-events:none;text-shadow:0 0 10px ${color}40;opacity:1;transition:all 0.8s ease-out;`;
+        document.body.appendChild(el);
+        requestAnimationFrame(() => {
+            el.style.top = '30%';
+            el.style.opacity = '0';
+        });
+        setTimeout(() => el.remove(), 1000);
+    }
+
+    spawnParticles(container) {
+        const rect = container.getBoundingClientRect();
+        const cx = rect.left + rect.width / 2;
+        const cy = rect.top + rect.height / 2;
+        for (let i = 0; i < 12; i++) {
+            const p = document.createElement('div');
+            p.style.cssText = `position:fixed;width:6px;height:6px;border-radius:50%;pointer-events:none;z-index:9999;background:hsl(${i*30},80%,60%);left:${cx}px;top:${cy}px;opacity:1;transition:all 0.7s ease-out;`;
+            document.body.appendChild(p);
+            const angle = (Math.PI * 2 * i) / 12;
+            const dist = 40 + Math.random() * 40;
+            requestAnimationFrame(() => {
+                p.style.transform = `translate(${Math.cos(angle)*dist}px, ${Math.sin(angle)*dist}px)`;
+                p.style.opacity = '0';
+            });
+            setTimeout(() => p.remove(), 800);
+        }
+    }
 }
+
+// Shake animation CSS
+(function(){const s=document.createElement('style');s.textContent='@keyframes rt-shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}';document.head.appendChild(s);})();
 
 // 초기화
 document.addEventListener('DOMContentLoaded', () => {
