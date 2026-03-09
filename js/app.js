@@ -154,6 +154,7 @@ class ReactionTest {
     startTest() {
         this.times = [];
         this.currentRound = 0;
+        if (typeof GameAds !== 'undefined') GameAds.removeRewardButton('#result-screen');
         this.showGameScreen();
         this.nextRound();
         // GA4 engagement on first interaction
@@ -319,6 +320,20 @@ class ReactionTest {
                 'average_time': avgTime,
                 'grade': grade.name,
                 'round_times': this.times.join(',')
+            });
+        }
+
+        // Inject rewarded ad button for bonus round
+        if (typeof GameAds !== 'undefined') {
+            GameAds.injectRewardButton({
+                container: '#result-screen',
+                label: '📺 Watch Ad for Bonus Round',
+                onReward: () => {
+                    // Give 3 extra rounds to improve average
+                    this.currentRound = 0;
+                    this.showGameScreen();
+                    this.nextRound();
+                }
             });
         }
     }
