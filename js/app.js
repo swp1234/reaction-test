@@ -205,6 +205,7 @@ class ReactionTest {
                 this.gameArea.classList.add('early-tap');
                 this.gameStatus.textContent = i18n.t('game.tooEarly');
                 this.shakeElement(this.gameArea);
+                if (typeof Haptic !== 'undefined') Haptic.heavy();
 
                 // 재시도
                 setTimeout(() => {
@@ -219,6 +220,10 @@ class ReactionTest {
         const reactionTime = Math.round(performance.now() - this.startTime);
         this.recordTime(reactionTime);
         this.isActive = false;
+        if (typeof Haptic !== 'undefined') {
+            if (reactionTime < 200) Haptic.success();
+            else Haptic.light();
+        }
 
         // 결과 표시 + floating text
         this.gameStatus.textContent = `${reactionTime}ms`;
