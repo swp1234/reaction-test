@@ -281,6 +281,13 @@ class ReactionTest {
             retryBtn.textContent = '🔄 ' + i18n.t('results.retryButton') + ' (' + (i18n.t('results.bestLabel') || 'Best') + ': ' + storedBest + 'ms)';
         }
 
+        // Daily streak tracking
+        if (typeof DailyStreak !== 'undefined') {
+            const played = parseInt(localStorage.getItem('reaction_gamesPlayed') || '0', 10) + 1;
+            localStorage.setItem('reaction_gamesPlayed', played.toString());
+            DailyStreak.report(played);
+        }
+
         // GA4 이벤트 추적
         if (window.gtag) {
             gtag('event', 'reaction_test_completed', {
@@ -529,6 +536,7 @@ class ReactionTest {
 document.addEventListener('DOMContentLoaded', () => {
     const app = new ReactionTest();
     initSoundToggle();
+    if (typeof DailyStreak !== 'undefined') DailyStreak.init({ gameId: 'reaction-test', bestScoreKey: 'reaction_gamesPlayed', minTarget: 1 });
 });
 
 // GA4 engagement tracking (scroll + timer)
