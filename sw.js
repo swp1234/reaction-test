@@ -1,5 +1,5 @@
 // 반응속도 테스트 - Service Worker
-const CACHE_NAME = 'reaction-test-v2';
+const CACHE_NAME = 'reaction-test-v3';
 const urlsToCache = [
     '/',
     '/index.html',
