@@ -1,10 +1,11 @@
 // 반응속도 테스트 - Service Worker
-const CACHE_NAME = 'reaction-test-v1';
+const CACHE_NAME = 'reaction-test-v2';
 const urlsToCache = [
     '/',
     '/index.html',
     '/css/style.css',
     '/js/app.js',
+    '/assets/target-opt.png',
     '/js/i18n.js',
     '/manifest.json',
     '/icon-192.svg',
