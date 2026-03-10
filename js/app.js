@@ -288,6 +288,7 @@ class ReactionTest {
             const resultIcon = document.getElementById('result-icon');
             if (resultIcon) resultIcon.textContent = '🏆';
             this.showNewBest();
+            this.spawnConfetti();
         }
         // Show best score comparison to encourage retry
         const storedBest = parseInt(localStorage.getItem('reaction-best') || avgTime.toString());
@@ -583,6 +584,22 @@ class ReactionTest {
                 p.style.opacity = '0';
             });
             setTimeout(() => p.remove(), 800);
+        }
+    }
+
+    spawnConfetti() {
+        const colors = ['#ff6b6b','#feca57','#48dbfb','#ff9ff3','#54a0ff','#5f27cd'];
+        for (let i = 0; i < 50; i++) {
+            const c = document.createElement('div');
+            c.style.cssText = `position:fixed;top:-10px;left:${Math.random()*100}%;width:${6+Math.random()*6}px;height:${6+Math.random()*6}px;background:${colors[Math.floor(Math.random()*colors.length)]};border-radius:${Math.random()>0.5?'50%':'0'};z-index:99999;pointer-events:none;animation:confettiFall ${1.5+Math.random()*2}s linear forwards`;
+            document.body.appendChild(c);
+            setTimeout(() => c.remove(), 4000);
+        }
+        if (!document.getElementById('confetti-style')) {
+            const s = document.createElement('style');
+            s.id = 'confetti-style';
+            s.textContent = '@keyframes confettiFall{0%{transform:translateY(0) rotate(0deg);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}';
+            document.head.appendChild(s);
         }
     }
 }
