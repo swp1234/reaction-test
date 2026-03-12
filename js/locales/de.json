@@ -80,6 +80,20 @@
     "whiteNoise": "Weißes Rauschen",
     "whiteNoiseDesc": "Schlaf-Wiedergabeliste!"
   },
+  "mode": {
+    "classic": "Klassisch",
+    "challenge": "Herausforderung",
+    "classicDesc": "5 Runden",
+    "challengeDesc": "20 Runden"
+  },
+  "challenge": {
+    "rounds": "20 Runden",
+    "roundProgress": "Runde {current}/{total}",
+    "bestReaction": "Beste Reaktion",
+    "worstReaction": "Schlechteste Reaktion",
+    "consistency": "Konsistenz",
+    "progressTitle": "Schwierigkeitsfortschritt"
+  },
   "ads": {
     "banner": "Werberaum",
     "interstitial": "Anzeige",

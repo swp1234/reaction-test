@@ -80,6 +80,20 @@
     "whiteNoise": "White Noise",
     "whiteNoiseDesc": "Sleep playlist!"
   },
+  "mode": {
+    "classic": "Classic",
+    "challenge": "Challenge",
+    "classicDesc": "5 Rounds",
+    "challengeDesc": "20 Rounds"
+  },
+  "challenge": {
+    "rounds": "20 Rounds",
+    "roundProgress": "Round {current}/{total}",
+    "bestReaction": "Best Reaction",
+    "worstReaction": "Worst Reaction",
+    "consistency": "Consistency",
+    "progressTitle": "Difficulty Progress"
+  },
   "ads": {
     "banner": "Advertisement Space",
     "interstitial": "Advertisement",

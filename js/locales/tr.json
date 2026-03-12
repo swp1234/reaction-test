@@ -80,6 +80,20 @@
     "whiteNoise": "Beyaz Gürültü",
     "whiteNoiseDesc": "Uyku çalma listesi!"
   },
+  "mode": {
+    "classic": "Klasik",
+    "challenge": "Meydan Okuma",
+    "classicDesc": "5 Tur",
+    "challengeDesc": "20 Tur"
+  },
+  "challenge": {
+    "rounds": "20 Tur",
+    "roundProgress": "Tur {current}/{total}",
+    "bestReaction": "En İyi Reaksiyon",
+    "worstReaction": "En Kötü Reaksiyon",
+    "consistency": "Tutarlılık",
+    "progressTitle": "Zorluk İlerlemesi"
+  },
   "ads": {
     "banner": "Reklam Alanı",
     "interstitial": "Reklam",

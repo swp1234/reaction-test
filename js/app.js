@@ -8,6 +8,8 @@ class ReactionTest {
         this.waitTimeout = null;
         this.minWaitTime = 1000;
         this.maxWaitTime = 5000;
+        this.gameMode = 'classic'; // 'classic' or 'challenge'
+        this.totalRounds = 5;
 
         this.initElements();
         this.initEventListeners();
@@ -57,6 +59,15 @@ class ReactionTest {
         this.premiumClose = document.getElementById('premium-close');
         this.closePremiumBtn = document.getElementById('close-premium-btn');
 
+        // Mode selector
+        this.modeClassicBtn = document.getElementById('mode-classic');
+        this.modeChallengeBtn = document.getElementById('mode-challenge');
+        this.totalRoundsEl = document.getElementById('total-rounds');
+        this.challengeStatsEl = document.getElementById('challenge-stats');
+        this.challengeBest = document.getElementById('challenge-best');
+        this.challengeWorst = document.getElementById('challenge-worst');
+        this.challengeConsistency = document.getElementById('challenge-consistency');
+
         // 언어 선택
         this.langToggle = document.getElementById('lang-toggle');
         this.langMenu = document.getElementById('lang-menu');
@@ -81,7 +92,7 @@ class ReactionTest {
 
         // Safe event listener attachment with null checks
         if (this.startBtn) this.startBtn.addEventListener('click', () => this.startTest());
-        if (this.retryBtn) this.retryBtn.addEventListener('click', () => this.startTest());
+        if (this.retryBtn) this.retryBtn.addEventListener('click', () => this.retryTest());
         if (this.shareBtn) this.shareBtn.addEventListener('click', () => this.shareResult());
         if (this.premiumBtn) this.premiumBtn.addEventListener('click', () => this.showPremiumAnalysis());
 
@@ -93,6 +104,14 @@ class ReactionTest {
                     this.onGameAreaTap();
                 }
             });
+        }
+
+        // Mode selector
+        if (this.modeClassicBtn) {
+            this.modeClassicBtn.addEventListener('click', () => this.setMode('classic'));
+        }
+        if (this.modeChallengeBtn) {
+            this.modeChallengeBtn.addEventListener('click', () => this.setMode('challenge'));
         }
 
         // 언어 선택
@@ -151,10 +170,48 @@ class ReactionTest {
         });
     }
 
+    retryTest() {
+        this.startTest();
+    }
+
+    setMode(mode) {
+        this.gameMode = mode;
+        this.totalRounds = mode === 'challenge' ? 20 : 5;
+
+        // Update UI
+        if (this.modeClassicBtn && this.modeChallengeBtn) {
+            this.modeClassicBtn.classList.toggle('active', mode === 'classic');
+            this.modeChallengeBtn.classList.toggle('active', mode === 'challenge');
+        }
+    }
+
+    getWaitTimeRange() {
+        if (this.gameMode !== 'challenge') {
+            return { min: this.minWaitTime, max: this.maxWaitTime };
+        }
+        // Progressive difficulty: wait time shrinks from 2-5s to 0.5-2s over 20 rounds
+        const progress = (this.currentRound - 1) / (this.totalRounds - 1); // 0 to 1
+        const minWait = 2000 - (1500 * progress); // 2000 -> 500
+        const maxWait = 5000 - (3000 * progress); // 5000 -> 2000
+        return { min: minWait, max: maxWait };
+    }
+
     startTest() {
         this.times = [];
         this.currentRound = 0;
+        if (this.totalRoundsEl) this.totalRoundsEl.textContent = this.totalRounds;
         if (typeof GameAds !== 'undefined') GameAds.removeRewardButton('#result-screen');
+
+        // Add/remove progress bar for challenge mode
+        const existingProgress = this.gameArea ? this.gameArea.querySelector('.challenge-progress') : null;
+        if (existingProgress) existingProgress.remove();
+        if (this.gameMode === 'challenge' && this.gameArea) {
+            const progressBar = document.createElement('div');
+            progressBar.className = 'challenge-progress';
+            progressBar.innerHTML = '<div class="challenge-progress-fill" id="challenge-progress-fill" style="width:0%"></div>';
+            this.gameArea.appendChild(progressBar);
+        }
+
         this.showGameScreen();
         this.nextRound();
         // GA4 engagement on first interaction
@@ -167,9 +224,15 @@ class ReactionTest {
         this.currentRound++;
         this.roundNumber.textContent = this.currentRound;
 
-        if (this.currentRound > 5) {
+        if (this.currentRound > this.totalRounds) {
             this.showResultScreen();
             return;
+        }
+
+        // Update challenge progress bar
+        if (this.gameMode === 'challenge') {
+            const fill = document.getElementById('challenge-progress-fill');
+            if (fill) fill.style.width = `${((this.currentRound - 1) / this.totalRounds) * 100}%`;
         }
 
         this.resetGameArea();
@@ -177,7 +240,8 @@ class ReactionTest {
     }
 
     resetGameArea() {
-        this.gameArea.className = '';
+        this.gameArea.classList.remove('ready', 'early-tap');
+        this.gameArea.style.opacity = '';
         this.isActive = false;
         this.startTime = null;
         this.gameStatus.textContent = i18n.t('game.waiting');
@@ -185,7 +249,8 @@ class ReactionTest {
     }
 
     waitForSignal() {
-        const waitTime = Math.random() * (this.maxWaitTime - this.minWaitTime) + this.minWaitTime;
+        const range = this.getWaitTimeRange();
+        const waitTime = Math.random() * (range.max - range.min) + range.min;
 
         this.waitTimeout = setTimeout(() => {
             this.showSignal();
@@ -273,17 +338,43 @@ class ReactionTest {
         this.gradeName.textContent = i18n.t(grade.i18nKey);
         this.percentile.textContent = i18n.t('results.topPercent', { percent: percentile });
 
+        // Adjust grid layout for challenge mode
+        if (this.timeList) {
+            this.timeList.classList.remove('grid-5', 'grid-challenge');
+            this.timeList.classList.add(this.gameMode === 'challenge' ? 'grid-challenge' : 'grid-5');
+        }
+
         // 측정 기록
-        this.timeList.innerHTML = this.times.map((time, index) => `
-            <div class="time-item">
+        const bestTime = Math.min(...this.times);
+        const worstTime = Math.max(...this.times);
+        this.timeList.innerHTML = this.times.map((time, index) => {
+            let highlight = '';
+            if (this.gameMode === 'challenge') {
+                if (time === bestTime) highlight = ' style="border-color: #2ecc71; background: rgba(46,204,113,0.1);"';
+                else if (time === worstTime) highlight = ' style="border-color: #e74c3c; background: rgba(231,76,60,0.1);"';
+            }
+            return `<div class="time-item"${highlight}>
                 <div class="time-number">${time}</div>
                 <div class="time-label">${i18n.t('results.round')} ${index + 1}</div>
-            </div>
-        `).join('');
+            </div>`;
+        }).join('');
+
+        // Show/hide challenge stats
+        if (this.challengeStatsEl) {
+            if (this.gameMode === 'challenge') {
+                this.challengeStatsEl.classList.remove('hidden');
+                const stdDev = this.calculateVariance();
+                if (this.challengeBest) this.challengeBest.textContent = bestTime + 'ms';
+                if (this.challengeWorst) this.challengeWorst.textContent = worstTime + 'ms';
+                if (this.challengeConsistency) this.challengeConsistency.textContent = stdDev + 'ms';
+            } else {
+                this.challengeStatsEl.classList.add('hidden');
+            }
+        }
 
         // Best score tracking with retry encouragement
-        const bestTime = parseInt(localStorage.getItem('reaction-best') || '9999');
-        if (avgTime < bestTime) {
+        const savedBest = parseInt(localStorage.getItem('reaction-best') || '9999');
+        if (avgTime < savedBest) {
             localStorage.setItem('reaction-best', avgTime.toString());
             const resultIcon = document.getElementById('result-icon');
             if (resultIcon) resultIcon.textContent = '🏆';
@@ -321,6 +412,7 @@ class ReactionTest {
             gtag('event', 'reaction_test_completed', {
                 'average_time': avgTime,
                 'grade': grade.name,
+                'game_mode': this.gameMode,
                 'round_times': this.times.join(',')
             });
         }

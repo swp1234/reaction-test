@@ -204,6 +204,19 @@
                         </div>
                     </div>
 
+                    <div class="mode-selector" id="mode-selector">
+                        <button class="mode-btn active" id="mode-classic" data-mode="classic">
+                            <span class="mode-icon">🎯</span>
+                            <span class="mode-name" data-i18n="mode.classic">클래식</span>
+                            <span class="mode-desc" data-i18n="mode.classicDesc">5라운드</span>
+                        </button>
+                        <button class="mode-btn" id="mode-challenge" data-mode="challenge">
+                            <span class="mode-icon">🔥</span>
+                            <span class="mode-name" data-i18n="mode.challenge">챌린지</span>
+                            <span class="mode-desc" data-i18n="mode.challengeDesc">20라운드</span>
+                        </button>
+                    </div>
+
                     <button class="btn btn-primary btn-large btn-cta-pulse" id="start-btn" data-i18n="intro.startButton">🎬 테스트 시작하기</button>
                 </div>
             </div>
@@ -216,7 +229,7 @@
                     </div>
                     <div class="game-info" id="game-info">
                         <span class="round-badge" id="round-badge" data-i18n="game.round">라운드</span>
-                        <span class="round-number" id="round-number">1</span>/5
+                        <span class="round-number" id="round-number">1</span>/<span id="total-rounds">5</span>
                     </div>
                 </div>
                 <div class="timer-display" id="timer-display"></div>
@@ -246,6 +259,24 @@
                         <h3 data-i18n="results.detailedStats">측정 기록</h3>
                         <div class="time-list" id="time-list">
                             <!-- 5개의 시간 데이터가 여기 들어갑니다 -->
+                        </div>
+                    </div>
+
+                    <div class="challenge-stats hidden" id="challenge-stats">
+                        <h3 data-i18n="challenge.progressTitle">난이도 진행</h3>
+                        <div class="challenge-stats-grid">
+                            <div class="challenge-stat-item">
+                                <span class="challenge-stat-label" data-i18n="challenge.bestReaction">최고 반응</span>
+                                <span class="challenge-stat-value" id="challenge-best">-</span>
+                            </div>
+                            <div class="challenge-stat-item">
+                                <span class="challenge-stat-label" data-i18n="challenge.worstReaction">최저 반응</span>
+                                <span class="challenge-stat-value" id="challenge-worst">-</span>
+                            </div>
+                            <div class="challenge-stat-item">
+                                <span class="challenge-stat-label" data-i18n="challenge.consistency">일관성</span>
+                                <span class="challenge-stat-value" id="challenge-consistency">-</span>
+                            </div>
                         </div>
                     </div>
 

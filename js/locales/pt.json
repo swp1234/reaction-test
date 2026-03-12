@@ -80,6 +80,20 @@
     "whiteNoise": "Ruído Branco",
     "whiteNoiseDesc": "Lista de reprodução do sono!"
   },
+  "mode": {
+    "classic": "Clássico",
+    "challenge": "Desafio",
+    "classicDesc": "5 Rodadas",
+    "challengeDesc": "20 Rodadas"
+  },
+  "challenge": {
+    "rounds": "20 Rodadas",
+    "roundProgress": "Rodada {current}/{total}",
+    "bestReaction": "Melhor Reação",
+    "worstReaction": "Pior Reação",
+    "consistency": "Consistência",
+    "progressTitle": "Progresso de Dificuldade"
+  },
   "ads": {
     "banner": "Espaço de Publicidade",
     "interstitial": "Publicidade",

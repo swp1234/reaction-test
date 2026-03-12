@@ -80,6 +80,20 @@
     "whiteNoise": "白噪音",
     "whiteNoiseDesc": "睡眠播放列表!"
   },
+  "mode": {
+    "classic": "经典",
+    "challenge": "挑战",
+    "classicDesc": "5轮",
+    "challengeDesc": "20轮"
+  },
+  "challenge": {
+    "rounds": "20轮",
+    "roundProgress": "第 {current}/{total} 轮",
+    "bestReaction": "最佳反应",
+    "worstReaction": "最差反应",
+    "consistency": "一致性",
+    "progressTitle": "难度进度"
+  },
   "ads": {
     "banner": "广告区域",
     "interstitial": "广告",

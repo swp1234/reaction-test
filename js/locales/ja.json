@@ -80,6 +80,20 @@
     "whiteNoise": "ホワイトノイズ",
     "whiteNoiseDesc": "睡眠プレイリスト!"
   },
+  "mode": {
+    "classic": "クラシック",
+    "challenge": "チャレンジ",
+    "classicDesc": "5ラウンド",
+    "challengeDesc": "20ラウンド"
+  },
+  "challenge": {
+    "rounds": "20ラウンド",
+    "roundProgress": "ラウンド {current}/{total}",
+    "bestReaction": "最高反応",
+    "worstReaction": "最低反応",
+    "consistency": "一貫性",
+    "progressTitle": "難易度進行"
+  },
   "ads": {
     "banner": "広告エリア",
     "interstitial": "広告",

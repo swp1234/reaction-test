@@ -80,6 +80,20 @@
     "whiteNoise": "Ruido Blanco",
     "whiteNoiseDesc": "¡Playlist para dormir!"
   },
+  "mode": {
+    "classic": "Clásico",
+    "challenge": "Desafío",
+    "classicDesc": "5 Rondas",
+    "challengeDesc": "20 Rondas"
+  },
+  "challenge": {
+    "rounds": "20 Rondas",
+    "roundProgress": "Ronda {current}/{total}",
+    "bestReaction": "Mejor Reacción",
+    "worstReaction": "Peor Reacción",
+    "consistency": "Consistencia",
+    "progressTitle": "Progreso de Dificultad"
+  },
   "ads": {
     "banner": "Espacio Publicitario",
     "interstitial": "Publicidad",

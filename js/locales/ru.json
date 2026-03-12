@@ -80,6 +80,20 @@
     "whiteNoise": "Белый шум",
     "whiteNoiseDesc": "Плейлист для сна!"
   },
+  "mode": {
+    "classic": "Классический",
+    "challenge": "Испытание",
+    "classicDesc": "5 раундов",
+    "challengeDesc": "20 раундов"
+  },
+  "challenge": {
+    "rounds": "20 раундов",
+    "roundProgress": "Раунд {current}/{total}",
+    "bestReaction": "Лучшая реакция",
+    "worstReaction": "Худшая реакция",
+    "consistency": "Последовательность",
+    "progressTitle": "Прогресс сложности"
+  },
   "ads": {
     "banner": "Место для объявления",
     "interstitial": "Объявление",

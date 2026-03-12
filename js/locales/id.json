@@ -80,6 +80,20 @@
     "whiteNoise": "Kebisingan Putih",
     "whiteNoiseDesc": "Playlist tidur!"
   },
+  "mode": {
+    "classic": "Klasik",
+    "challenge": "Tantangan",
+    "classicDesc": "5 Putaran",
+    "challengeDesc": "20 Putaran"
+  },
+  "challenge": {
+    "rounds": "20 Putaran",
+    "roundProgress": "Putaran {current}/{total}",
+    "bestReaction": "Reaksi Terbaik",
+    "worstReaction": "Reaksi Terburuk",
+    "consistency": "Konsistensi",
+    "progressTitle": "Kemajuan Kesulitan"
+  },
   "ads": {
     "banner": "Ruang Iklan",
     "interstitial": "Iklan",

@@ -80,6 +80,20 @@
     "whiteNoise": "화이트 노이즈",
     "whiteNoiseDesc": "숙면 플레이리스트!"
   },
+  "mode": {
+    "classic": "클래식",
+    "challenge": "챌린지",
+    "classicDesc": "5라운드",
+    "challengeDesc": "20라운드"
+  },
+  "challenge": {
+    "rounds": "20라운드",
+    "roundProgress": "라운드 {current}/{total}",
+    "bestReaction": "최고 반응",
+    "worstReaction": "최저 반응",
+    "consistency": "일관성",
+    "progressTitle": "난이도 진행"
+  },
   "ads": {
     "banner": "광고 영역",
     "interstitial": "광고",

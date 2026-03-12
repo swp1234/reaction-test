@@ -80,6 +80,20 @@
     "whiteNoise": "Bruit Blanc",
     "whiteNoiseDesc": "Liste de lecture pour dormir!"
   },
+  "mode": {
+    "classic": "Classique",
+    "challenge": "Défi",
+    "classicDesc": "5 Manches",
+    "challengeDesc": "20 Manches"
+  },
+  "challenge": {
+    "rounds": "20 Manches",
+    "roundProgress": "Manche {current}/{total}",
+    "bestReaction": "Meilleure Réaction",
+    "worstReaction": "Pire Réaction",
+    "consistency": "Cohérence",
+    "progressTitle": "Progression de Difficulté"
+  },
   "ads": {
     "banner": "Espace Publicitaire",
     "interstitial": "Publicité",

@@ -80,6 +80,20 @@
     "whiteNoise": "श्वेत शोर",
     "whiteNoiseDesc": "नींद प्लेलिस्ट!"
   },
+  "mode": {
+    "classic": "क्लासिक",
+    "challenge": "चुनौती",
+    "classicDesc": "5 दौर",
+    "challengeDesc": "20 दौर"
+  },
+  "challenge": {
+    "rounds": "20 दौर",
+    "roundProgress": "दौर {current}/{total}",
+    "bestReaction": "सर्वश्रेष्ठ प्रतिक्रिया",
+    "worstReaction": "सबसे धीमी प्रतिक्रिया",
+    "consistency": "संगति",
+    "progressTitle": "कठिनाई प्रगति"
+  },
   "ads": {
     "banner": "विज्ञापन स्थान",
     "interstitial": "विज्ञापन",
