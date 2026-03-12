@@ -61,7 +61,40 @@
     "consistent": "Tutarlı",
     "somewhat": "Biraz Tutarlı",
     "inconsistent": "Tutarsız",
-    "improvementSuggestion": "Yeterli uyku, dinlenme ve meditasyon veya egzersiz yoluyla stres giderme reaksiyon zamanını iyileştirmeye yardımcı olabilir."
+    "improvementSuggestion": "Yeterli uyku, dinlenme ve meditasyon veya egzersiz yoluyla stres giderme reaksiyon zamanını iyileştirmeye yardımcı olabilir.",
+    "analysis": {
+      "superhuman": {
+        "type": "İnsanüstü Reaksiyon Tipi",
+        "description": "Reaksiyon hızınız ortalamayı çok aşıyor. Bu, olağanüstü sinir iletim hızı ve anlık karar verme yeteneğini gösterir.",
+        "traits": "Aşırı odaklanma,Hızlı karar verme,Mükemmel refleksler,Spor/oyun yeteneği",
+        "career": "Profesyonel oyuncu,Sporcu,Pilot,Cerrah"
+      },
+      "veryFast": {
+        "type": "Çok Hızlı Reaksiyon Tipi",
+        "description": "Reaksiyon hızınız ortalamadan çok daha hızlı. Muhtemelen yüksek sinir verimliliğine ve iyi konsantrasyona sahipsiniz.",
+        "traits": "Yüksek konsantrasyon,Hızlı öğrenme yeteneği,İyi refleksler,Mükemmel uyum yeteneği",
+        "career": "Programcı,Tasarımcı,Sporcu,Asker"
+      },
+      "fast": {
+        "type": "Hızlı Reaksiyon Tipi",
+        "description": "Reaksiyon hızınız ortalamanın üzerinde. Bu, sağlıklı bir sinir sistemi ve iyi dikkat düzeyini gösterir.",
+        "traits": "İyi dikkat,Çeviklik,Kararlı reaksiyonlar,Tutarlı performans",
+        "career": "Uzman,Yönetici,Sağlık profesyoneli,Teknisyen"
+      },
+      "normal": {
+        "type": "Normal Reaksiyon Tipi",
+        "description": "Reaksiyon hızınız normal aralıktadır. Bu, normal sinir sistemi işlevi ve yeterli konsantrasyonu gösterir.",
+        "traits": "Kararlı performans,Yeterli konsantrasyon,Dengeli reaksiyonlar,Güvenilirlik",
+        "career": "Çok yönlü uyum,Yönetim/koordinasyon,Ofis işi,Eğitimci"
+      },
+      "slow": {
+        "type": "Yavaş Reaksiyon Tipi",
+        "description": "Reaksiyon hızınız ortalamanın altında. Bu yorgunluk, stres veya dikkat dağınıklığından kaynaklanıyor olabilir.",
+        "traits": "Dikkatli yargılama,Derin düşünce,Güvenilir performans,Sistematik yaklaşım",
+        "career": "Analist,Araştırmacı,Teorisyen,Planlamacı",
+        "improvement": "Yeterli uyku ve dinlenme, meditasyon veya egzersiz yoluyla stres giderme reaksiyon hızını iyileştirmeye yardımcı olabilir."
+      }
+    }
   },
   "recommendations": {
     "title": "Bunları da Deneyin",

@@ -61,7 +61,40 @@
     "consistent": "Konsisten",
     "somewhat": "Agak Konsisten",
     "inconsistent": "Tidak Konsisten",
-    "improvementSuggestion": "Tidur yang cukup, istirahat, dan penghilangan stres melalui meditasi atau olahraga dapat membantu meningkatkan waktu reaksi."
+    "improvementSuggestion": "Tidur yang cukup, istirahat, dan penghilangan stres melalui meditasi atau olahraga dapat membantu meningkatkan waktu reaksi.",
+    "analysis": {
+      "superhuman": {
+        "type": "Tipe Reaksi Supermanusia",
+        "description": "Kecepatan reaksi Anda jauh melebihi rata-rata. Ini menunjukkan kecepatan transmisi saraf yang luar biasa dan kemampuan pengambilan keputusan instan.",
+        "traits": "Konsentrasi ekstrem,Pengambilan keputusan cepat,Refleks sangat baik,Bakat olahraga/gaming",
+        "career": "Gamer profesional,Atlet,Pilot,Ahli bedah"
+      },
+      "veryFast": {
+        "type": "Tipe Reaksi Sangat Cepat",
+        "description": "Kecepatan reaksi Anda jauh lebih cepat dari rata-rata. Anda kemungkinan memiliki efisiensi saraf tinggi dan konsentrasi yang baik.",
+        "traits": "Konsentrasi tinggi,Kemampuan belajar cepat,Refleks baik,Adaptabilitas sangat baik",
+        "career": "Programmer,Desainer,Atlet,Militer"
+      },
+      "fast": {
+        "type": "Tipe Reaksi Cepat",
+        "description": "Kecepatan reaksi Anda di atas rata-rata. Ini menunjukkan sistem saraf yang sehat dan perhatian yang baik.",
+        "traits": "Perhatian baik,Kelincahan,Reaksi stabil,Kinerja konsisten",
+        "career": "Spesialis,Manajer,Profesional kesehatan,Teknisi"
+      },
+      "normal": {
+        "type": "Tipe Reaksi Normal",
+        "description": "Kecepatan reaksi Anda dalam rentang normal. Ini menunjukkan fungsi sistem saraf normal dan konsentrasi yang memadai.",
+        "traits": "Kinerja stabil,Konsentrasi memadai,Reaksi seimbang,Keandalan",
+        "career": "Adaptasi serbaguna,Manajemen/koordinasi,Pekerjaan kantor,Pendidik"
+      },
+      "slow": {
+        "type": "Tipe Reaksi Lambat",
+        "description": "Kecepatan reaksi Anda lebih lambat dari rata-rata. Ini mungkin disebabkan oleh kelelahan, stres, atau gangguan perhatian.",
+        "traits": "Penilaian hati-hati,Pemikiran mendalam,Kinerja andal,Pendekatan sistematis",
+        "career": "Analis,Peneliti,Ahli teori,Perencana",
+        "improvement": "Tidur dan istirahat yang cukup, serta penghilangan stres melalui meditasi atau olahraga dapat membantu meningkatkan kecepatan reaksi."
+      }
+    }
   },
   "recommendations": {
     "title": "Coba Juga Ini",

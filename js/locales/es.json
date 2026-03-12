@@ -61,7 +61,40 @@
     "consistent": "Consistente",
     "somewhat": "Algo Consistente",
     "inconsistent": "Inconsistente",
-    "improvementSuggestion": "El sueño adecuado, el descanso y el alivio del estrés a través de la meditación o el ejercicio pueden ayudar a mejorar el tiempo de reacción."
+    "improvementSuggestion": "El sueño adecuado, el descanso y el alivio del estrés a través de la meditación o el ejercicio pueden ayudar a mejorar el tiempo de reacción.",
+    "analysis": {
+      "superhuman": {
+        "type": "Tipo de Reacción Sobrehumana",
+        "description": "Tu velocidad de reacción supera con creces el promedio. Esto sugiere una velocidad de transmisión neuronal excepcional y capacidad de decisión inmediata.",
+        "traits": "Concentración extrema,Toma de decisiones rápida,Excelentes reflejos,Talento deportivo/gaming",
+        "career": "Jugador profesional,Deportista,Piloto,Cirujano"
+      },
+      "veryFast": {
+        "type": "Tipo de Reacción Muy Rápida",
+        "description": "Tu velocidad de reacción es mucho más rápida que la media. Es probable que tengas alta eficiencia neuronal y buena concentración.",
+        "traits": "Alta concentración,Aprendizaje rápido,Buenos reflejos,Excelente adaptabilidad",
+        "career": "Programador,Diseñador,Deportista,Militar"
+      },
+      "fast": {
+        "type": "Tipo de Reacción Rápida",
+        "description": "Tu velocidad de reacción es superior al promedio. Esto indica un sistema nervioso saludable y buena atención.",
+        "traits": "Buena atención,Agilidad,Reacciones estables,Rendimiento consistente",
+        "career": "Especialista,Gerente,Profesional de la salud,Técnico"
+      },
+      "normal": {
+        "type": "Tipo de Reacción Normal",
+        "description": "Tu velocidad de reacción está dentro del rango normal. Esto indica un funcionamiento normal del sistema nervioso y concentración adecuada.",
+        "traits": "Rendimiento estable,Concentración adecuada,Reacciones equilibradas,Fiabilidad",
+        "career": "Adaptación versátil,Gestión/coordinación,Trabajo de oficina,Educador"
+      },
+      "slow": {
+        "type": "Tipo de Reacción Lenta",
+        "description": "Tu velocidad de reacción es más lenta que el promedio. Esto puede ser causado por fatiga, estrés o distracción.",
+        "traits": "Juicio cuidadoso,Pensamiento profundo,Rendimiento fiable,Enfoque sistemático",
+        "career": "Analista,Investigador,Teórico,Planificador",
+        "improvement": "El sueño adecuado y el descanso, y el alivio del estrés mediante meditación o ejercicio pueden ayudar a mejorar la velocidad de reacción."
+      }
+    }
   },
   "recommendations": {
     "title": "Prueba También Estas",

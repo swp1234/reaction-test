@@ -61,7 +61,40 @@
     "consistent": "Konsistent",
     "somewhat": "Einigermaßen konsistent",
     "inconsistent": "Inkonsistent",
-    "improvementSuggestion": "Ausreichend Schlaf, Ruhe und Stressabbau durch Meditation oder Bewegung können zur Verbesserung der Reaktionszeit beitragen."
+    "improvementSuggestion": "Ausreichend Schlaf, Ruhe und Stressabbau durch Meditation oder Bewegung können zur Verbesserung der Reaktionszeit beitragen.",
+    "analysis": {
+      "superhuman": {
+        "type": "Übermenschlicher Reaktionstyp",
+        "description": "Ihre Reaktionsgeschwindigkeit liegt weit über dem Durchschnitt. Dies deutet auf eine herausragende Nervenleitgeschwindigkeit und sofortige Entscheidungsfähigkeit hin.",
+        "traits": "Extreme Konzentration,Schnelle Entscheidungsfindung,Ausgezeichnete Reflexe,Sport-/Gaming-Talent",
+        "career": "Profi-Gamer,Sportler,Pilot,Chirurg"
+      },
+      "veryFast": {
+        "type": "Sehr schneller Reaktionstyp",
+        "description": "Ihre Reaktionsgeschwindigkeit ist viel schneller als der Durchschnitt. Sie haben wahrscheinlich eine hohe neuronale Effizienz und gute Konzentration.",
+        "traits": "Hohe Konzentration,Schnelle Lernfähigkeit,Gute Reflexe,Ausgezeichnete Anpassungsfähigkeit",
+        "career": "Programmierer,Designer,Sportler,Militär"
+      },
+      "fast": {
+        "type": "Schneller Reaktionstyp",
+        "description": "Ihre Reaktionsgeschwindigkeit liegt über dem Durchschnitt. Dies deutet auf ein gesundes Nervensystem und gute Aufmerksamkeit hin.",
+        "traits": "Gute Aufmerksamkeit,Agilität,Stabile Reaktionen,Konstante Leistung",
+        "career": "Spezialist,Manager,Gesundheitsfachkraft,Techniker"
+      },
+      "normal": {
+        "type": "Normaler Reaktionstyp",
+        "description": "Ihre Reaktionsgeschwindigkeit liegt im normalen Bereich. Dies zeigt eine normale Nervensystemfunktion und ausreichende Konzentration an.",
+        "traits": "Stabile Leistung,Ausreichende Konzentration,Ausgewogene Reaktionen,Zuverlässigkeit",
+        "career": "Vielseitige Anpassung,Management/Koordination,Büroarbeit,Pädagoge"
+      },
+      "slow": {
+        "type": "Langsamer Reaktionstyp",
+        "description": "Ihre Reaktionsgeschwindigkeit liegt unter dem Durchschnitt. Dies kann durch Müdigkeit, Stress oder Ablenkung verursacht werden.",
+        "traits": "Sorgfältiges Urteil,Tiefes Denken,Zuverlässige Leistung,Systematischer Ansatz",
+        "career": "Analyst,Forscher,Theoretiker,Planer",
+        "improvement": "Ausreichend Schlaf und Ruhe sowie Stressabbau durch Meditation oder Bewegung können zur Verbesserung der Reaktionsgeschwindigkeit beitragen."
+      }
+    }
   },
   "recommendations": {
     "title": "Versuchen Sie auch diese",

@@ -510,38 +510,38 @@ class ReactionTest {
         const variance = this.calculateVariance();
         const improvement = this.suggestImprovement(avgTime);
 
+        const t = (key, fallback) => (window.i18n?.t(key)) || fallback;
         const analyses = {
             'superhuman': {
-                type: '초인적 반응 타입',
-                description: '당신은 평균을 훨씬 넘는 빠른 반응 속도를 가지고 있습니다. 이는 뛰어난 신경 전달 속도와 즉각적인 판단력을 시사합니다.',
-                traits: ['극도의 집중력', '빠른 의사결정', '반사신경 우수', '스포츠/게임 재능'],
-                career: ['프로 게이머', '스포츠 선수', '조종사', '외과의']
+                type: t('premium.analysis.superhuman.type', 'Superhuman Reaction Type'),
+                description: t('premium.analysis.superhuman.description', 'You have a reaction speed far exceeding the average. This suggests outstanding neural transmission speed and immediate decision-making ability.'),
+                traits: (t('premium.analysis.superhuman.traits', 'Extreme focus,Fast decision-making,Excellent reflexes,Sports/gaming talent')).split(','),
+                career: (t('premium.analysis.superhuman.career', 'Pro gamer,Athlete,Pilot,Surgeon')).split(',')
             },
             'veryFast': {
-                type: '매우 빠른 반응 타입',
-                description: '당신의 반응 속도는 일반인보다 훨씬 빠릅니다. 높은 신경 효율성과 좋은 집중력을 가지고 있을 가능성이 높습니다.',
-                traits: ['높은 집중력', '빠른 학습능력', '좋은 반사신경', '적응력 우수'],
-                career: ['프로그래머', '디자이너', '운동선수', '군인']
+                type: t('premium.analysis.veryFast.type', 'Very Fast Reaction Type'),
+                description: t('premium.analysis.veryFast.description', 'Your reaction speed is much faster than average. You likely have high neural efficiency and good concentration.'),
+                traits: (t('premium.analysis.veryFast.traits', 'High concentration,Fast learning ability,Good reflexes,Excellent adaptability')).split(','),
+                career: (t('premium.analysis.veryFast.career', 'Programmer,Designer,Athlete,Military')).split(',')
             },
             'fast': {
-                type: '빠른 반응 타입',
-                description: '당신은 평균보다 빠른 반응 속도를 보유하고 있습니다. 이는 건강한 신경계통과 좋은 주의력을 의미합니다.',
-                traits: ['좋은 주의력', '민첩성', '안정적 반응', '일관된 성능'],
-                career: ['전문가 직종', '관리자', '의료인', '기술자']
+                type: t('premium.analysis.fast.type', 'Fast Reaction Type'),
+                description: t('premium.analysis.fast.description', 'You have a faster reaction speed than average. This indicates a healthy nervous system and good attentiveness.'),
+                traits: (t('premium.analysis.fast.traits', 'Good attentiveness,Agility,Stable reactions,Consistent performance')).split(','),
+                career: (t('premium.analysis.fast.career', 'Specialist,Manager,Healthcare professional,Technician')).split(',')
             },
             'normal': {
-                type: '보통 반응 타입',
-                description: '당신의 반응 속도는 일반적인 범위 내에 있습니다. 정상적인 신경계통 기능과 적절한 집중력을 나타냅니다.',
-                traits: ['안정적 성능', '적절한 집중력', '균형잡힌 반응', '신뢰성'],
-                career: ['다양한 분야 적응', '관리/조정 역할', '사무직', '교육자']
+                type: t('premium.analysis.normal.type', 'Normal Reaction Type'),
+                description: t('premium.analysis.normal.description', 'Your reaction speed is within the normal range. This indicates normal nervous system function and adequate concentration.'),
+                traits: (t('premium.analysis.normal.traits', 'Stable performance,Adequate concentration,Balanced reactions,Reliability')).split(','),
+                career: (t('premium.analysis.normal.career', 'Versatile adaptation,Management/coordination,Office work,Educator')).split(',')
             },
             'slow': {
-                type: '느린 반응 타입',
-                description: '당신의 반응 속도는 평균보다 느립니다. 이는 피로, 스트레스, 또는 집중력 산만이 원인일 수 있습니다.',
-                traits: ['신중한 판단', '깊은 사고력', '신뢰성 있는 성능', '체계적 접근'],
-                traits_alt: ['피로/스트레스 상태', '산만한 주의력', '낮은 신경 효율'],
-                career: ['분석가', '연구자', '이론가', '계획가'],
-                improvement: '충분한 수면과 휴식, 명상이나 운동을 통한 스트레스 해소가 반응 속도 향상에 도움이 될 수 있습니다.'
+                type: t('premium.analysis.slow.type', 'Slow Reaction Type'),
+                description: t('premium.analysis.slow.description', 'Your reaction speed is slower than average. This may be caused by fatigue, stress, or distraction.'),
+                traits: (t('premium.analysis.slow.traits', 'Careful judgment,Deep thinking,Reliable performance,Systematic approach')).split(','),
+                career: (t('premium.analysis.slow.career', 'Analyst,Researcher,Theorist,Planner')).split(','),
+                improvement: t('premium.analysis.slow.improvement', 'Adequate sleep and rest, and stress relief through meditation or exercise can help improve reaction speed.')
             }
         };
 

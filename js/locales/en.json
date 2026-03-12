@@ -61,7 +61,40 @@
     "consistent": "Consistent",
     "somewhat": "Somewhat Consistent",
     "inconsistent": "Inconsistent",
-    "improvementSuggestion": "Adequate sleep, rest, and stress relief through meditation or exercise can help improve reaction time."
+    "improvementSuggestion": "Adequate sleep, rest, and stress relief through meditation or exercise can help improve reaction time.",
+    "analysis": {
+      "superhuman": {
+        "type": "Superhuman Reaction Type",
+        "description": "You have a reaction speed far exceeding the average. This suggests outstanding neural transmission speed and immediate decision-making ability.",
+        "traits": "Extreme focus,Fast decision-making,Excellent reflexes,Sports/gaming talent",
+        "career": "Pro gamer,Athlete,Pilot,Surgeon"
+      },
+      "veryFast": {
+        "type": "Very Fast Reaction Type",
+        "description": "Your reaction speed is much faster than average. You likely have high neural efficiency and good concentration.",
+        "traits": "High concentration,Fast learning ability,Good reflexes,Excellent adaptability",
+        "career": "Programmer,Designer,Athlete,Military"
+      },
+      "fast": {
+        "type": "Fast Reaction Type",
+        "description": "You have a faster reaction speed than average. This indicates a healthy nervous system and good attentiveness.",
+        "traits": "Good attentiveness,Agility,Stable reactions,Consistent performance",
+        "career": "Specialist,Manager,Healthcare professional,Technician"
+      },
+      "normal": {
+        "type": "Normal Reaction Type",
+        "description": "Your reaction speed is within the normal range. This indicates normal nervous system function and adequate concentration.",
+        "traits": "Stable performance,Adequate concentration,Balanced reactions,Reliability",
+        "career": "Versatile adaptation,Management/coordination,Office work,Educator"
+      },
+      "slow": {
+        "type": "Slow Reaction Type",
+        "description": "Your reaction speed is slower than average. This may be caused by fatigue, stress, or distraction.",
+        "traits": "Careful judgment,Deep thinking,Reliable performance,Systematic approach",
+        "career": "Analyst,Researcher,Theorist,Planner",
+        "improvement": "Adequate sleep and rest, and stress relief through meditation or exercise can help improve reaction speed."
+      }
+    }
   },
   "recommendations": {
     "title": "Try These Too",

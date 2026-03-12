@@ -61,7 +61,40 @@
     "consistent": "Cohérent",
     "somewhat": "Quelque Peu Cohérent",
     "inconsistent": "Incohérent",
-    "improvementSuggestion": "Un sommeil adéquat, du repos et une réduction du stress par la méditation ou l'exercice peuvent aider à améliorer le temps de réaction."
+    "improvementSuggestion": "Un sommeil adéquat, du repos et une réduction du stress par la méditation ou l'exercice peuvent aider à améliorer le temps de réaction.",
+    "analysis": {
+      "superhuman": {
+        "type": "Type de Réaction Surhumaine",
+        "description": "Votre vitesse de réaction dépasse largement la moyenne. Cela suggère une vitesse de transmission neurale exceptionnelle et une capacité de décision immédiate.",
+        "traits": "Concentration extrême,Prise de décision rapide,Excellents réflexes,Talent sportif/gaming",
+        "career": "Joueur professionnel,Athlète,Pilote,Chirurgien"
+      },
+      "veryFast": {
+        "type": "Type de Réaction Très Rapide",
+        "description": "Votre vitesse de réaction est bien plus rapide que la moyenne. Vous avez probablement une haute efficacité neurale et une bonne concentration.",
+        "traits": "Haute concentration,Apprentissage rapide,Bons réflexes,Excellente adaptabilité",
+        "career": "Programmeur,Designer,Athlète,Militaire"
+      },
+      "fast": {
+        "type": "Type de Réaction Rapide",
+        "description": "Votre vitesse de réaction est supérieure à la moyenne. Cela indique un système nerveux sain et une bonne attention.",
+        "traits": "Bonne attention,Agilité,Réactions stables,Performance constante",
+        "career": "Spécialiste,Manager,Professionnel de santé,Technicien"
+      },
+      "normal": {
+        "type": "Type de Réaction Normal",
+        "description": "Votre vitesse de réaction se situe dans la plage normale. Cela indique un fonctionnement normal du système nerveux et une concentration adéquate.",
+        "traits": "Performance stable,Concentration adéquate,Réactions équilibrées,Fiabilité",
+        "career": "Adaptation polyvalente,Gestion/coordination,Travail de bureau,Éducateur"
+      },
+      "slow": {
+        "type": "Type de Réaction Lente",
+        "description": "Votre vitesse de réaction est inférieure à la moyenne. Cela peut être causé par la fatigue, le stress ou la distraction.",
+        "traits": "Jugement prudent,Réflexion profonde,Performance fiable,Approche systématique",
+        "career": "Analyste,Chercheur,Théoricien,Planificateur",
+        "improvement": "Un sommeil et un repos adéquats, et la réduction du stress par la méditation ou l'exercice peuvent aider à améliorer la vitesse de réaction."
+      }
+    }
   },
   "recommendations": {
     "title": "Essayez Aussi Ceux-ci",
