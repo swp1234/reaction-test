@@ -131,5 +131,15 @@
     "banner": "Ruang Iklan",
     "interstitial": "Iklan",
     "closeButton": "Tutup"
+  },
+  "result": {
+    "moreTests": "Jelajahi Tes Lainnya",
+    "percentileStat": "Hanya <strong>{percent}%</strong> peserta yang memiliki kecepatan reaksi seperti Anda"
+  },
+  "related": {
+    "iqTest": "Tes IQ",
+    "brainType": "Tipe Otak",
+    "typingSpeed": "Kecepatan Mengetik",
+    "colorBlindness": "Buta Warna"
   }
 }

@@ -407,6 +407,13 @@ class ReactionTest {
             });
         }
 
+        // Percentile stat
+        const percentileStat = document.getElementById('percentile-stat');
+        if (percentileStat) {
+            const pNum = this.getPercentileNumber(avgTime);
+            percentileStat.innerHTML = i18n.t('result.percentileStat', { percent: pNum });
+        }
+
         // GA4 이벤트 추적
         if (window.gtag) {
             gtag('event', 'reaction_test_completed', {
@@ -470,6 +477,19 @@ class ReactionTest {
         if (avgTime <= 250) return '30%';
         if (avgTime <= 350) return '50%';
         return '70%+';
+    }
+
+    getPercentileNumber(avgTime) {
+        // Return a numeric percentile for the stat display
+        if (avgTime <= 150) return 1;
+        if (avgTime <= 175) return 5;
+        if (avgTime <= 200) return 10;
+        if (avgTime <= 225) return 20;
+        if (avgTime <= 250) return 30;
+        if (avgTime <= 300) return 40;
+        if (avgTime <= 350) return 50;
+        if (avgTime <= 400) return 60;
+        return 70;
     }
 
     shareResult() {

@@ -131,5 +131,15 @@
     "banner": "Место для объявления",
     "interstitial": "Объявление",
     "closeButton": "Закрыть"
+  },
+  "result": {
+    "moreTests": "Другие тесты",
+    "percentileStat": "Только <strong>{percent}%</strong> участников имеют вашу скорость реакции"
+  },
+  "related": {
+    "iqTest": "IQ Тест",
+    "brainType": "Тип мозга",
+    "typingSpeed": "Скорость печати",
+    "colorBlindness": "Цветовая слепота"
   }
 }

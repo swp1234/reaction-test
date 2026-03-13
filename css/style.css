@@ -1131,6 +1131,86 @@ body::before {
     color: var(--text-secondary);
 }
 
+/* Percentile stat */
+.percentile-stat {
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    padding: 12px 16px;
+    background: rgba(0, 200, 83, 0.06);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 200, 83, 0.15);
+}
+.percentile-stat strong {
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+/* Related tests cross-promo */
+.related-tests {
+    margin-top: 4px;
+}
+.related-tests h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    text-align: center;
+}
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.related-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 14px 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+.related-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--card-color);
+    opacity: 0.08;
+    transition: opacity 0.3s;
+}
+.related-card:hover::before {
+    opacity: 0.18;
+}
+.related-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--card-color);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+.related-emoji {
+    font-size: 28px;
+    position: relative;
+}
+.related-name {
+    font-size: 13px;
+    font-weight: 600;
+    position: relative;
+}
+[data-theme="light"] .related-card {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.08);
+}
+[data-theme="light"] .related-card:hover {
+    border-color: var(--card-color);
+}
+
 /* 푸터 */
 .game-footer {
     padding: 20px 0;

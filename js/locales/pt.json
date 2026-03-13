@@ -131,5 +131,15 @@
     "banner": "Espaço de Publicidade",
     "interstitial": "Publicidade",
     "closeButton": "Fechar"
+  },
+  "result": {
+    "moreTests": "Explorar mais testes",
+    "percentileStat": "Apenas <strong>{percent}%</strong> dos participantes têm sua velocidade de reação"
+  },
+  "related": {
+    "iqTest": "Teste de QI",
+    "brainType": "Tipo de cérebro",
+    "typingSpeed": "Velocidade de digitação",
+    "colorBlindness": "Daltonismo"
   }
 }

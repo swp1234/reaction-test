@@ -131,5 +131,15 @@
     "banner": "广告区域",
     "interstitial": "广告",
     "closeButton": "关闭"
+  },
+  "result": {
+    "moreTests": "探索更多测试",
+    "percentileStat": "只有<strong>{percent}%</strong>的参与者拥有你的反应速度"
+  },
+  "related": {
+    "iqTest": "IQ测试",
+    "brainType": "大脑类型",
+    "typingSpeed": "打字速度",
+    "colorBlindness": "色盲测试"
   }
 }

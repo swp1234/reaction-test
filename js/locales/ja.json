@@ -131,5 +131,15 @@
     "banner": "広告エリア",
     "interstitial": "広告",
     "closeButton": "閉じる"
+  },
+  "result": {
+    "moreTests": "もっとテストを試す",
+    "percentileStat": "参加者の<strong>{percent}%</strong>だけがあなたと同じ反応速度を持っています"
+  },
+  "related": {
+    "iqTest": "IQテスト",
+    "brainType": "脳タイプ",
+    "typingSpeed": "タイピング速度",
+    "colorBlindness": "色覚テスト"
   }
 }

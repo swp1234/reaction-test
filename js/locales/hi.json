@@ -131,5 +131,15 @@
     "banner": "विज्ञापन स्थान",
     "interstitial": "विज्ञापन",
     "closeButton": "बंद करें"
+  },
+  "result": {
+    "moreTests": "और टेस्ट देखें",
+    "percentileStat": "केवल <strong>{percent}%</strong> प्रतिभागियों की आपकी जैसी प्रतिक्रिया गति है"
+  },
+  "related": {
+    "iqTest": "IQ टेस्ट",
+    "brainType": "मस्तिष्क प्रकार",
+    "typingSpeed": "टाइपिंग स्पीड",
+    "colorBlindness": "रंग अंधापन"
   }
 }
