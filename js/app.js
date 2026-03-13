@@ -295,7 +295,15 @@ class ReactionTest {
         this.gameStatus.textContent = `${reactionTime}ms`;
         this.gameArea.style.opacity = '0.8';
         const color = reactionTime <= 200 ? '#2ecc71' : reactionTime <= 300 ? '#f39c12' : '#e74c3c';
-        this.showFloatingTime(`${reactionTime}ms`, color);
+
+        // Personal best comparison
+        const pb = parseInt(localStorage.getItem('reaction_pb') || '9999');
+        let label = `${reactionTime}ms`;
+        if (reactionTime < pb) {
+            localStorage.setItem('reaction_pb', reactionTime.toString());
+            label += ' PB!';
+        }
+        this.showFloatingTime(label, color);
         if (reactionTime <= 200) this.spawnParticles(this.gameArea);
 
         setTimeout(() => {
